@@ -1,10 +1,13 @@
-import { globalStyles } from '../shared/styles'
+import { globalStyles, lightTheme } from "../shared/styles";
+import { ThemeProvider } from "@emotion/react";
 
 const App = ({ Component, pageProps }) => (
-  <>
-    {globalStyles}
-    <Component {...pageProps} />
-  </>
-)
+    <>
+        <ThemeProvider theme={lightTheme}>
+            {globalStyles}
+            <Component {...pageProps} />
+        </ThemeProvider>
+    </>
+);
 
-export default App
+export default App;
