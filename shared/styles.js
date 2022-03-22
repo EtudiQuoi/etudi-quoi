@@ -9,7 +9,7 @@ export const lightTheme = {
     darkColor: "#083262",
     darkShade: "#161C2E",
     baseColor: "#FFFFFF",
-    backgroundGradient: "linear-gradient(179.98deg, #FFFFFF 0.01%, #EAF0FF 99.99%)",
+    backgroundGradient: "linear-gradient(180deg, #FFFFFF 0%, #D6E0FF 100%);",
     primaryGradient: "radial-gradient(100% 100% at 100% 100%, #A4D2FF 0%, #3C84C8 50.52%, #054999 100%)",
     transition: "0.3s ease",
 };
@@ -27,8 +27,8 @@ export const globalStyles = (
             body {
                 background: #171717;
                 min-height: 100%;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 24px;
+                font-family: 'Epilogue', Helvetica, Arial, sans-serif;
+                font-size: 16px;
             }
         `}
     />
@@ -37,8 +37,10 @@ export const globalStyles = (
 export const Container = styled.div`
     overflow: hidden;
     margin: auto;
+    padding: 1rem 0;
     height: 100vh;
     width: 100vw;
     max-width: 480px;
     background: ${({ theme }) => theme.backgroundGradient};
+    text-align: center;
 `;
