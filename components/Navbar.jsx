@@ -7,12 +7,8 @@ import ChartIcon from "../icons/ChartIcon";
 export default function Navbar() {
     return (
         <Nav>
-            <NavItem href={"/"}>
-                <CardIcon active />
-            </NavItem>
-            <NavItem href={"/"}>
-                <ChartIcon />
-            </NavItem>
+            <CardIcon active />
+            <ChartIcon />
         </Nav>
     );
 }
@@ -27,6 +23,6 @@ const Nav = styled.nav`
     box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
-const NavItem = styled(Link)`
-    cursor: pointer;
-`;
+// const NavItem = styled(Link)`
+//     cursor: pointer;
+// `;
