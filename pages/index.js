@@ -1,58 +1,49 @@
 import styled from "@emotion/styled";
 import { Container } from "../shared/styles";
 
+import VoteWrapper from "../lib/context";
+
 import Navbar from "../components/Navbar";
 import Range from "../components/Range";
-import RoundButton from "../components/RoundButton";
 import Logo from "../components/Logo";
 import { Stack } from "../components/Stack";
+import ButtonNav from "../components/ButtonNav";
 
 const Home = () => (
     <Container>
-        <Grid>
-            <GridItem area="header">
-                <Logo />
-            </GridItem>
-            <GridItem area="card">
-                <Wrapper onVote={(item, vote) => console.log(item.props, vote)}>
-                    <Item data-value="team" whileTap={{ scale: 1.15 }}>
-                        <span>Apprécies tu le travail d’équipe ?</span>
-                    </Item>
-                    <Item data-value="curiosity" whileTap={{ scale: 1.15 }}>
-                        <span>Es-tu curieux ?</span>
-                    </Item>
-                    <Item data-value="informatic" whileTap={{ scale: 1.15 }}>
-                        <span>L'informatique est un domaine qui t'intéresse ?</span>
-                    </Item>
-                </Wrapper>
-            </GridItem>
-            <GridItem area="range">
-                <Range value="2250" max="3000" />
-            </GridItem>
-            <GridItem area="buttons">
-                <ButtonContainer>
-                    <RoundButton layout="cross" />
-                    <RoundButton layout="text" size="small">
-                        Passer
-                    </RoundButton>
-                    <RoundButton onClick layout="check" />
-                </ButtonContainer>
-            </GridItem>
-            <GridItem area="navbar">
-                <Navbar />
-            </GridItem>
-        </Grid>
+        <VoteWrapper>
+            <Grid>
+                <GridItem area="header">
+                    <Logo />
+                </GridItem>
+                <GridItem area="card">
+                    <Wrapper onVote={(item, vote) => console.log(item.props, vote)}>
+                        <Item data-value="team" whileTap={{ scale: 1.15 }}>
+                            <span>Apprécies tu le travail d’équipe ?</span>
+                        </Item>
+                        <Item data-value="curiosity" whileTap={{ scale: 1.15 }}>
+                            <span>Es-tu curieux ?</span>
+                        </Item>
+                        <Item data-value="informatic" whileTap={{ scale: 1.15 }}>
+                            <span>L'informatique est un domaine qui t'intéresse ?</span>
+                        </Item>
+                    </Wrapper>
+                </GridItem>
+                <GridItem area="range">
+                    <Range value="2250" max="3000" />
+                </GridItem>
+                <GridItem area="buttons">
+                    <ButtonNav />
+                </GridItem>
+                <GridItem area="navbar">
+                    <Navbar />
+                </GridItem>
+            </Grid>
+        </VoteWrapper>
     </Container>
 );
 
 export default Home;
-
-const ButtonContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-`;
 
 const Grid = styled.div`
     width: 100%;

@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useMotionValue, useAnimation } from "framer-motion";
 import styled from "@emotion/styled";
-import RoundButton from "./RoundButton";
+
+import { useVoteFunctionContext } from "../lib/context";
 
 let velocity = 0;
 let direction = undefined;
@@ -9,6 +10,8 @@ let direction = undefined;
 export const Card = ({ children, style, onVote, id, ...props }) => {
     // motion stuff
     const cardElem = useRef(null);
+
+    const { setVoteFunction } = useVoteFunctionContext();
 
     const x = useMotionValue(0);
     const controls = useAnimation();
@@ -46,6 +49,17 @@ export const Card = ({ children, style, onVote, id, ...props }) => {
             });
         }
     };
+
+    useEffect(() => {
+        const handleVote = (dir) => {
+            if (!cardElem?.current) return;
+            direction = dir;
+            velocity = 600;
+            flyAway(500);
+        };
+
+        props.drag && setVoteFunction(() => handleVote);
+    }, [props.drag]);
 
     useEffect(() => {
         const unsubscribeX = x.onChange(() => {

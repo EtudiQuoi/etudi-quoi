@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 export default function RoundButton(props) {
     return (
-        <Btn size={props.size}>
+        <Btn onClick={() => props?.onClick?.()} size={props.size}>
             {props.layout === "cross" && (
                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24.2175 3L3 24.2175M24.2175 24.2175L3 3" stroke="#0C53A3" strokeWidth="7" />
