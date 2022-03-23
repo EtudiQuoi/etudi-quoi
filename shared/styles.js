@@ -9,6 +9,7 @@ export const lightTheme = {
     darkColor: "#083262",
     darkShade: "#161C2E",
     baseColor: "#FFFFFF",
+    boxShadow: "0px 4px 16px rgba(52, 89, 131, 0.16)",
     backgroundGradient: "linear-gradient(180deg, #FFFFFF 0%, #D6E0FF 100%);",
     primaryGradient: "radial-gradient(100% 100% at 100% 100%, #A4D2FF 0%, #3C84C8 50.52%, #054999 100%)",
     transition: "0.3s ease",
@@ -39,6 +40,7 @@ export const Container = styled.div`
     margin: auto;
     height: 100vh;
     width: 100vw;
+    padding: 1rem 0;
     max-width: 480px;
     background: ${({ theme }) => theme.backgroundGradient};
     text-align: center;

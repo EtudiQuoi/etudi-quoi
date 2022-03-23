@@ -4,12 +4,13 @@ import { Container } from "../shared/styles";
 import Navbar from "../components/Navbar";
 import Range from "../components/Range";
 import RoundButton from "../components/RoundButton";
+import Logo from "../components/Logo";
 
 const Home = () => (
     <Container>
         <Grid>
             <GridItem area="header">
-                <h1>App name</h1>
+                <Logo />
             </GridItem>
             <GridItem area="card"></GridItem>
             <GridItem area="range">
@@ -18,8 +19,8 @@ const Home = () => (
             <GridItem area="buttons">
                 <ButtonContainer>
                     <RoundButton layout="cross" />
-                    <RoundButton layout="emoji" size="small">
-                        🤔
+                    <RoundButton layout="text" size="small">
+                        Passer
                     </RoundButton>
                     <RoundButton layout="check" />
                 </ButtonContainer>
@@ -42,10 +43,10 @@ const ButtonContainer = styled.div`
 
 const Grid = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 1fr 10vh 10vh 20vh;
+    grid-template-rows: 15vh 1fr 10vh 10vh 15vh;
     grid-template-areas:
         "header"
         "card"
