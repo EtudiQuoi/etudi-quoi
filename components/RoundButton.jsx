@@ -24,7 +24,6 @@ export default function RoundButton(props) {
 }
 
 const Btn = styled.button`
-    margin-top: 2rem;
     cursor: pointer;
     outline: none;
     border: none;

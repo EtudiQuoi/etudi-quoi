@@ -14,7 +14,6 @@ export default function Range(props) {
 }
 
 const RangeContainer = styled.div`
-    margin-top: 28rem;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -37,7 +37,6 @@ export const globalStyles = (
 export const Container = styled.div`
     overflow: hidden;
     margin: auto;
-    padding: 1rem 0;
     height: 100vh;
     width: 100vw;
     max-width: 480px;

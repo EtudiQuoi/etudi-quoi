@@ -5,7 +5,6 @@ export default function Button(props) {
 }
 
 const Btn = styled.button`
-    margin-top: 2rem;
     cursor: pointer;
     outline: none;
     border: none;
