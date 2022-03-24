@@ -1,0 +1,24 @@
+{
+    "questions": [
+        {
+            "question": "Apprécies-tu les travaux de groupes ?",
+            "type": "0",
+            "keywords": ["équipe", "coopération"]
+        },
+        {
+            "question": "Es-tu curieux ?",
+            "type": "0",
+            "keywords": ["curiosité", "curieux", "curieuse"]
+        },
+        {
+            "question": "Aimes-tu créer des choses ?",
+            "type": "0",
+            "keywords": ["créativité", "créatif", "créative"]
+        },
+        {
+            "question": "L'informatique est un domaine qui t'intéresse ?",
+            "type": "1",
+            "keywords": ["informatique", "programmation"]
+        }
+    ]
+}
