@@ -7,8 +7,8 @@ import ChartIcon from "../icons/ChartIcon";
 export default function Navbar() {
     return (
         <Nav>
-            <CardIcon active />
-            <ChartIcon />
+            <Link href="/"><a><CardIcon active /></a></Link>
+            <Link href="/results"><a><ChartIcon /></a></Link>
         </Nav>
     );
 }
