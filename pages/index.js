@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import styled from "@emotion/styled";
 import { Container } from "../shared/styles";
 
-import VoteWrapper from "../lib/context";
-import { useQuestion } from "../lib/useQuestion";
+import VoteWrapper from "../lib/voteFunctionContext";
+import { useQuestionContext } from "../lib/questionContext";
 
 import Navbar from "../components/Navbar";
 import Range from "../components/Range";
@@ -12,8 +12,7 @@ import { Stack } from "../components/Stack";
 import ButtonNav from "../components/ButtonNav";
 
 const Home = () => {
-    const [test, setTest] = useState();
-    const [questions, setQuestions, formations, setFormations, nextQuestion] = useQuestion();
+    const { questions, setQuestions, formations, setFormations, nextQuestion } = useQuestionContext();
 
     useEffect(async () => {
         const questionsData = await fetchJson("./questions.json");
@@ -23,16 +22,11 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
-        setTest(questions);
-        console.log(questions);
-    }, [questions]);
-
-    useEffect(() => {
         if (!formations) return;
         const formationsList = formations.map((formation) => {
             return { score: formation.score || 0, name: formation.INTITULE };
         });
-        console.log(formationsList.sort((a, b) => b.score - a.score));
+        // console.log(formationsList.sort((a, b) => b.score - a.score));
     }, [formations]);
 
     const fetchJson = async (url) => {
@@ -50,19 +44,15 @@ const Home = () => {
                         <Logo />
                     </GridItem>
                     <GridItem area="card">
-                        <Wrapper onVote={(item, vote) => nextQuestion(vote)}>
-                            {test ? (
-                                test.map((element) => (
+                        {questions?.length > 0 && (
+                            <Wrapper onVote={(item, vote) => nextQuestion(vote)}>
+                                {questions.map((element) => (
                                     <Item key={element.id} whileTap={{ scale: 1.15 }}>
                                         <span>{element.question}</span>
                                     </Item>
-                                ))
-                            ) : (
-                                <Item>
-                                    <span>Chargement des questions...</span>
-                                </Item>
-                            )}
-                        </Wrapper>
+                                ))}
+                            </Wrapper>
+                        )}
                     </GridItem>
                     <GridItem area="range">
                         <Range value={formations?.length || 0} />
