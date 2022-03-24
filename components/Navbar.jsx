@@ -1,14 +1,25 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import CardIcon from "../icons/CardIcon";
 import ChartIcon from "../icons/ChartIcon";
 
 export default function Navbar() {
+    const router = useRouter();
+
     return (
         <Nav>
-            <Link href="/"><a><CardIcon active /></a></Link>
-            <Link href="/results"><a><ChartIcon /></a></Link>
+            <Link href="/">
+                <a>
+                    <CardIcon active={router.pathname === "/"} />
+                </a>
+            </Link>
+            <Link href="/results">
+                <a>
+                    <ChartIcon active={router.pathname === "/results"} />
+                </a>
+            </Link>
         </Nav>
     );
 }
