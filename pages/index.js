@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import { Container } from "../shared/styles";
 
 import VoteWrapper from "../lib/context";
+import { useQuestion } from "../lib/useQuestion";
 
 import Navbar from "../components/Navbar";
 import Range from "../components/Range";
@@ -9,39 +11,73 @@ import Logo from "../components/Logo";
 import { Stack } from "../components/Stack";
 import ButtonNav from "../components/ButtonNav";
 
-const Home = () => (
-    <Container>
-        <VoteWrapper>
-            <Grid>
-                <GridItem area="header">
-                    <Logo />
-                </GridItem>
-                <GridItem area="card">
-                    <Wrapper onVote={(item, vote) => console.log(item.props, vote)}>
-                        <Item data-value="team" whileTap={{ scale: 1.15 }}>
-                            <span>Apprécies tu le travail d’équipe ?</span>
-                        </Item>
-                        <Item data-value="curiosity" whileTap={{ scale: 1.15 }}>
-                            <span>Es-tu curieux ?</span>
-                        </Item>
-                        <Item data-value="informatic" whileTap={{ scale: 1.15 }}>
-                            <span>L'informatique est un domaine qui t'intéresse ?</span>
-                        </Item>
-                    </Wrapper>
-                </GridItem>
-                <GridItem area="range">
-                    <Range value="2250" max="3000" />
-                </GridItem>
-                <GridItem area="buttons">
-                    <ButtonNav />
-                </GridItem>
-                <GridItem area="navbar">
-                    <Navbar />
-                </GridItem>
-            </Grid>
-        </VoteWrapper>
-    </Container>
-);
+const Home = () => {
+    const [test, setTest] = useState();
+    const [questions, setQuestions, formations, setFormations, nextQuestion] = useQuestion();
+
+    useEffect(async () => {
+        const questionsData = await fetchJson("./questions.json");
+        const formationsData = await fetchJson("./formation-data.json");
+        setQuestions(questionsData.questions);
+        setFormations(formationsData.FICHES.FICHE);
+    }, []);
+
+    useEffect(() => {
+        setTest(questions);
+        console.log(questions);
+    }, [questions]);
+
+    useEffect(() => {
+        if (!formations) return;
+        const formationsList = formations.map((formation) => {
+            return { score: formation.score || 0, name: formation.INTITULE };
+        });
+        console.log(formationsList.sort((a, b) => b.score - a.score));
+    }, [formations]);
+
+    const fetchJson = async (url) => {
+        const response = await fetch(url);
+        const json = await response.json();
+
+        return json;
+    };
+
+    return (
+        <Container>
+            <VoteWrapper>
+                <Grid>
+                    <GridItem area="header">
+                        <Logo />
+                    </GridItem>
+                    <GridItem area="card">
+                        <Wrapper onVote={(item, vote) => nextQuestion(vote)}>
+                            {test ? (
+                                test.map((element) => (
+                                    <Item key={element.id} whileTap={{ scale: 1.15 }}>
+                                        <span>{element.question}</span>
+                                    </Item>
+                                ))
+                            ) : (
+                                <Item>
+                                    <span>Chargement des questions...</span>
+                                </Item>
+                            )}
+                        </Wrapper>
+                    </GridItem>
+                    <GridItem area="range">
+                        <Range value={formations?.length || 0} />
+                    </GridItem>
+                    <GridItem area="buttons">
+                        <ButtonNav />
+                    </GridItem>
+                    <GridItem area="navbar">
+                        <Navbar />
+                    </GridItem>
+                </Grid>
+            </VoteWrapper>
+        </Container>
+    );
+};
 
 export default Home;
 

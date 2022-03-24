@@ -9,11 +9,11 @@ export default function ButtonNav() {
 
     return (
         <ButtonContainer>
-            <RoundButton onClick={() => voteFunction("left")} layout="cross" />
+            <RoundButton onClick={() => voteFunction && voteFunction("left")} layout="cross" />
             <RoundButton layout="text" size="small">
                 Passer
             </RoundButton>
-            <RoundButton onClick={() => voteFunction("right")} layout="check" />
+            <RoundButton onClick={() => voteFunction && voteFunction("right")} layout="check" />
         </ButtonContainer>
     );
 }
