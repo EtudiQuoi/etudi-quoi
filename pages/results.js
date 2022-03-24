@@ -18,11 +18,17 @@ const Results = () => (
                         <CardResult />
                         <Separator />
                         <CardResult />
+                        <Separator />
                         <CardResult />
+                        <Separator />
                         <CardResult />
+                        <Separator />
                         <CardResult />
+                        <Separator />
                         <CardResult />
+                        <Separator />
                         <CardResult />
+                        <Separator />
                         <CardResult />
                     </CardsList>
                 </GridItem>
