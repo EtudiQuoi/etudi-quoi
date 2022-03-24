@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import { useVoteFunctionContext } from "../lib/context";
+import { useVoteFunctionContext } from "../lib/voteFunctionContext";
 
 import RoundButton from "./RoundButton";
 

@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, useMotionValue, useAnimation } from "framer-motion";
 import styled from "@emotion/styled";
 
-import { useVoteFunctionContext } from "../lib/context";
+import { useVoteFunctionContext } from "../lib/voteFunctionContext";
 
 let velocity = 0;
 let direction = undefined;
