@@ -1,44 +1,60 @@
+import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import { Container } from "../shared/styles";
 
-import VoteWrapper from "../lib/context";
+import { useQuestionContext } from "../lib/questionContext";
 
 import Navbar from "../components/Navbar";
 import CardResult from "../components/CardResult";
 
-const Results = () => (
-    <Container>
-        <VoteWrapper>
+const Results = () => {
+    const { formations, questionCounter } = useQuestionContext();
+    const [formationsList, setFormationsList] = useState([]);
+
+    useEffect(() => {
+        if (!formations) return;
+        const list = formations.map((formation) => {
+            return { score: formation.score || 0, name: formation.INTITULE, code: formation.ABREGE?.LIBELLE };
+        });
+        list.sort((a, b) => b.score - a.score);
+        list.length = 10;
+        setFormationsList(list);
+    }, [formations]);
+
+    return (
+        <Container>
             <Grid>
                 <GridItem area="header">
                     <h1>Mes Formations</h1>
                 </GridItem>
                 <GridItem area="results">
-                    <CardsList>
-                        <CardResult />
-                        <Separator />
-                        <CardResult />
-                        <Separator />
-                        <CardResult />
-                        <Separator />
-                        <CardResult />
-                        <Separator />
-                        <CardResult />
-                        <Separator />
-                        <CardResult />
-                        <Separator />
-                        <CardResult />
-                        <Separator />
-                        <CardResult />
-                    </CardsList>
+                    {formationsList?.length > 0 && (
+                        <CardsList>
+                            {formationsList.map((formation, index) => {
+                                const percentage = Math.round((parseInt(formation.score) / questionCounter) * 100) || 0;
+
+                                return (
+                                    <>
+                                        <CardResult
+                                            key={index}
+                                            type={formation.code}
+                                            title={formation.name}
+                                            percentage={percentage}
+                                        />
+                                        {index >= formations.length - 1 && <Separator key={index} />}
+                                    </>
+                                );
+                            })}
+                        </CardsList>
+                    )}
                 </GridItem>
                 <GridItem area="navbar">
                     <Navbar />
                 </GridItem>
             </Grid>
-        </VoteWrapper>
-    </Container>
-);
+        </Container>
+    );
+};
 
 export default Results;
 
@@ -68,6 +84,7 @@ const CardsList = styled.ul`
     overflow: scroll;
     height: 500px;
     max-height: 100%;
+
     &::-webkit-scrollbar {
         display: none;
     }

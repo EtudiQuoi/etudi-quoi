@@ -1,17 +1,17 @@
 import RoundButton from "./RoundButton";
 import styled from "@emotion/styled";
 
-const CardResult = (props) => {
+const CardResult = ({ type, title, percentage, ...props }) => {
     return (
         <ListItem>
-            <FormationType>Bachelor Universitaire de Technologie</FormationType>
-            <FormationTitle>Métiers du Multimédia et de l’Internet</FormationTitle>
+            <FormationType>{type}</FormationType>
+            <FormationTitle>{title}</FormationTitle>
             <BottomInfo>
                 <Label htmlFor="pertinence">Pertinence</Label>
-                <ProgressBar id="pertinence" value="70" max="100">
-                    70%
+                <ProgressBar id="pertinence" value={percentage} max="100">
+                    {percentage}%
                 </ProgressBar>
-                <p>70%</p>
+                <p>{percentage}%</p>
                 <RoundButton size="tiny" layout="arrow" />
             </BottomInfo>
         </ListItem>
