@@ -12,29 +12,15 @@ import { Stack } from "../components/Stack";
 import ButtonNav from "../components/ButtonNav";
 
 const Home = () => {
-    const { questions, setQuestions, formations, setFormations, nextQuestion } = useQuestionContext();
-
-    useEffect(async () => {
-        const questionsData = await fetchJson("./questions.json");
-        const formationsData = await fetchJson("./formation-data.json");
-        setQuestions(questionsData.questions);
-        setFormations(formationsData.FICHES.FICHE);
-    }, []);
+    const { questions, setQuestions, formations, nextQuestion, questionCounter } = useQuestionContext();
+    const [questionList, setQuestionList] = useState();
 
     useEffect(() => {
-        if (!formations) return;
-        const formationsList = formations.map((formation) => {
-            return { score: formation.score || 0, name: formation.INTITULE };
-        });
-        // console.log(formationsList.sort((a, b) => b.score - a.score));
-    }, [formations]);
-
-    const fetchJson = async (url) => {
-        const response = await fetch(url);
-        const json = await response.json();
-
-        return json;
-    };
+        if (!questions) return;
+        const temp = [...questions];
+        temp?.splice(-questionCounter, questionCounter);
+        setQuestionList(temp);
+    }, [questions]);
 
     return (
         <Container>
@@ -44,9 +30,9 @@ const Home = () => {
                         <Logo />
                     </GridItem>
                     <GridItem area="card">
-                        {questions?.length > 0 && (
+                        {questionList?.length > 0 && (
                             <Wrapper onVote={(item, vote) => nextQuestion(vote)}>
-                                {questions.map((element) => (
+                                {questionList.map((element) => (
                                     <Item key={element.id} whileTap={{ scale: 1.15 }}>
                                         <span>{element.question}</span>
                                     </Item>

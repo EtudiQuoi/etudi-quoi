@@ -19,6 +19,15 @@ export default function RoundButton(props) {
                 </svg>
             )}
 
+            {props.layout === "arrow" && (
+                <svg width="16" height="16" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.23802 2.20142C0.836978 1.81251 0.836978 1.18221 1.22466 0.779896C1.42518 0.578737 1.67917 0.484863 1.94654 0.484863C2.20053 0.484863 2.45453 0.578737 2.64168 0.779896L7.30719 5.43337C7.49434 5.62112 7.60129 5.87592 7.60129 6.14413C7.60129 6.41235 7.49434 6.66715 7.30719 6.8549L2.64168 11.5084C2.25401 11.9107 1.6257 11.9107 1.22466 11.5084C0.836978 11.1195 0.836978 10.4758 1.23802 10.0869L5.18164 6.14413L1.23802 2.20142Z"
+                        fill="#0C53A3"
+                    />
+                </svg>
+            )}
+
             {props.layout === "text" && props.children}
         </Btn>
     );
@@ -40,9 +49,13 @@ const Btn = styled.button`
     box-shadow: ${({ theme }) => theme.boxShadow};
 
     ${(props) => {
-        if (props.size === 'small') {
+        if (props.size === "small") {
             return css`
                 padding: 1rem 1.5rem;
+            `;
+        } else if (props.size === "tiny") {
+            return css`
+                padding: 0.5rem 0.5rem;
             `;
         } else {
             return css`
