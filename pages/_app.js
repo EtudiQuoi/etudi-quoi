@@ -25,6 +25,24 @@ const App = ({ Component, pageProps }) => (
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
             {/* <link rel="manifest" href="/manifest.json" /> */}
+
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://etudiquoi.com/" />
+            <meta property="og:title" content="Etudi'quoi" />
+            <meta
+                property="og:description"
+                content="Etudi'Quoi c'est l'app qui te permet te trouver la formation qui te correspond. T'en dis quoi ?"
+            />
+            <meta property="og:image" content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg" />
+
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="https://etudiquoi.com/" />
+            <meta property="twitter:title" content="Etudi'quoi" />
+            <meta
+                property="twitter:description"
+                content="Etudi'Quoi c'est l'app qui te permet te trouver la formation qui te correspond. T'en dis quoi ?"
+            />
+            <meta property="twitter:image" content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg" />
         </Head>
         <ThemeProvider theme={lightTheme}>
             <QuestionWrapper>
