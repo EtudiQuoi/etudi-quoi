@@ -1,25 +1,14 @@
-# Emotion Example
+![](https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg)
 
-Extract and inline critical css with
-[@emotion/css](https://github.com/emotion-js/emotion/tree/master/packages/css),
-[@emotion/server](https://github.com/emotion-js/emotion/tree/master/packages/server),
-[@emotion/react](https://github.com/emotion-js/emotion/tree/master/packages/react),
-and [@emotion/styled](https://github.com/emotion-js/emotion/tree/master/packages/styled).
+# Etudi'Quoi
 
-## Deploy your own
+L’appli qui te permet de trouver ta formation qui matche tes envies !
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-emotion)
+## Link 🚀
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-emotion&project-name=with-emotion&repository-name=with-emotion)
+Test the app here : https://etudiquoi.com/
 
-## How to use
+## Copyrights ©
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-emotion with-emotion-app
-# or
-yarn create next-app --example with-emotion with-emotion-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Maxence BREUILLES ([@MisterAzix](https://github.com/MisterAzix))<br />
+Nicolas MARSAN ([@NicoooM](https://github.com/NicoooM))
