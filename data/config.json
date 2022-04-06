@@ -198,154 +198,154 @@
         },
         {
             "label": "le secteur  de l'alimentation, l'agroalimentaire t'en dis quoi ?",
-            "keywords": ["alimentation", "alimentaire", "agroalimentaire"],
+            "keywords": ["alimentation", "alimentaire", "agroalimentaire", "nourriture"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  de la banque, la finance, l'assurance t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["banque", "finance", "assurance", "economie"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  du btp, de l'urbanisme t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["btp", "urbanisme", "urbain", "travaux"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  de l'énergie t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["energie", "environnement"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  de l'environnement, les déchets, la propreté t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["environnement", "nature", "déchets", "propreté", "nettoyage"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  de la gestion, la comptabilité, les rh t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["gestion", "comptabilité", "rh", "diriger", "direction"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  de l'humanitaire t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["humanitaire", "bénévolat", "bénévole", "aide"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  des matériaux, de l'industrie t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["industrie", "matériaux", "production"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  du secrétariat, de l'accueil t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["secrétariat", "accueil", "secrétaire"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "le secteur  du transport, de la logistique t'en dis quoi ?",
-            "keywords": [],
+            "keywords": ["transport", "logistique", "conduite", "coordoner"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
             "label": "aimes-tu les animaux  ?",
-            "keywords": [],
+            "keywords": ["animaux", "animal"],
             "nsf": [],
             "strength": "1",
             "type": []
         },
         {
-            "label": "aimes-tu le cinéma, l'audiovisuel, le jeux vidéo  ?",
-            "keywords": [],
+            "label": "aimes-tu le cinéma, l'audiovisuel ou le jeux vidéo  ?",
+            "keywords": ["cinéma", "audiovisuel", "jeux vidéo", "art", "visuel", "numérique"],
             "nsf": ["132g","321v","323"],
             "strength": "1",
             "type": []
         },
         {
             "label": "aimes-tu les livres, l'édition, l'imprimerie  ?",
-            "keywords": [],
+            "keywords": ["livre", "édition", "imprimerie", "littéraire", "libraire"],
             "nsf": ["322","131"],
             "strength": "1",
             "type": []
         },
         {
-            "label": "aimes-tu la physique, les maths   ?",
-            "keywords": [],
+            "label": "aimes-tu la physique, les maths  ?",
+            "keywords": ["physique", "math", "science", "calcul"],
             "nsf": ["11"],
             "strength": "1",
             "type": []
         },
         {
             "label": "aimes-tu le sport, l'animation  ?",
-            "keywords": [],
+            "keywords": ["sport", "animation"],
             "nsf": ["335w","335t"],
             "strength": "1",
             "type": []
         },
         {
             "label": "as-tu un attrait pour l'architecture, la décoration  ?",
-            "keywords": [],
+            "keywords": ["décoration", "design", "architecture"],
             "nsf": ["230n","233","234v" ],
             "strength": "1",
             "type": []
         },
         {
             "label": "as-tu un attrait pour le design, la mode  ?",
-            "keywords": [],
+            "keywords": ["design", "mode", "couture"],
             "nsf": ["242","243","132f"],
             "strength": "1",
             "type": []
         },
         {
             "label": "as-tu un attrait pour la culture, le spectacle, le patrimoine  ?",
-            "keywords": [],
+            "keywords": ["culture", "spectacle", "patrimoine", "musée", "exposition"],
             "nsf": ["342"],
             "strength": "1",
             "type": []
         },
         {
             "label": "as-tu un attrait pour l'éléctricité, l'éléctronique, la robotique  ?",
-            "keywords": [],
+            "keywords": ["éléctronique", "technologie", "robotique", "éléctricité", "informatique"],
             "nsf": ["255"],
             "strength": "1",
             "type": []
         },
         {
             "label": "as-tu un attrait pour l'informatique, le web, les réseaux  ?",
-            "keywords": [],
+            "keywords": ["informatique", "web", "réseau", "technologie", "internet"],
             "nsf": ["326"],
             "strength": "1",
             "type": []
         },
         {
             "label": "as-tu un attrait pour les lettres, les sciences humaines, les langues  ?",
-            "keywords": [],
+            "keywords": ["langues", "sciences humaines", "lettre", "écriture"],
             "nsf": ["120 ","131","136","125"],
             "strength": "1",
             "type": []
         },
         {
             "label": "as-tu un attrait pour le social, la petite enfance, les services à la personne  ?",
-            "keywords": [],
+            "keywords": ["social", "enfant", "enfance", "service à la personne"],
             "nsf": ["332 ","330","335","421 "],
             "strength": "1",
             "type": []
