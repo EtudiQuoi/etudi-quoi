@@ -8,15 +8,16 @@ import Navbar from "../components/Navbar";
 import CardResult from "../components/CardResult";
 
 const Results = () => {
-    const { formations, questionCounter } = useQuestionContext();
+    const { formations } = useQuestionContext();
     const [formationsList, setFormationsList] = useState([]);
 
     useEffect(() => {
         if (!formations) return;
-        const list = formations.map((formation) => {
-            return { score: formation.score || 0, name: formation.INTITULE, code: formation.ABREGE?.LIBELLE };
-        });
-        list.sort((a, b) => b.score - a.score);
+        // const list = formations.map((formation) => {
+        //     return { score: formation.score || 0, name: formation.INTITULE, code: formation.ABREGE?.LIBELLE };
+        // });
+        // list.sort((a, b) => b.score - a.score);
+        const list = [...formations];
         list.length = 10;
         setFormationsList(list);
     }, [formations]);
@@ -31,17 +32,17 @@ const Results = () => {
                     {formationsList?.length > 0 && (
                         <CardsList>
                             {formationsList.map((formation, index) => {
-                                const percentage = Math.round((parseInt(formation.score) / questionCounter) * 100) || 0;
+                                // const percentage = Math.round((parseInt(formation.score) / questionCounter) * 100) || 0;
 
                                 return (
                                     <>
                                         <CardResult
-                                            key={index}
-                                            type={formation.code}
-                                            title={formation.name}
-                                            percentage={percentage}
+                                            key={formation.formation_id}
+                                            type={formation.type}
+                                            title={formation.label}
+                                            percentage={0}
                                         />
-                                        {index >= formations.length - 1 && <Separator key={index} />}
+                                        {index < formationsList.length - 1 && <Separator key={index} />}
                                     </>
                                 );
                             })}

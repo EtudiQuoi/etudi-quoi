@@ -4,16 +4,16 @@ import { useVoteFunctionContext } from "../lib/voteFunctionContext";
 
 import RoundButton from "./RoundButton";
 
-export default function ButtonNav() {
+export default function ButtonNav(props) {
     const { voteFunction } = useVoteFunctionContext();
 
     return (
         <ButtonContainer>
-            <RoundButton onClick={() => voteFunction && voteFunction("left")} layout="cross" />
+            <RoundButton onClick={() => props.active && voteFunction && voteFunction("left")} layout="cross" />
             <RoundButton layout="text" size="small">
                 Passer
             </RoundButton>
-            <RoundButton onClick={() => voteFunction && voteFunction("right")} layout="check" />
+            <RoundButton onClick={() => props.active && voteFunction && voteFunction("right")} layout="check" />
         </ButtonContainer>
     );
 }

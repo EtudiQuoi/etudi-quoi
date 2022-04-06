@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export default function Logo() {
     return (
         <H1>
-            <span>Etudi'</span>Quoi
+            <span>Etudi'</span>quoi
         </H1>
     );
 }

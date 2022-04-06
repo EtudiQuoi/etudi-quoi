@@ -12,11 +12,11 @@ import { Stack } from "../components/Stack";
 import ButtonNav from "../components/ButtonNav";
 
 const Home = () => {
-    const { questions, setQuestions, formations, nextQuestion, questionCounter } = useQuestionContext();
+    const { questions, formations, nextQuestion, questionCounter } = useQuestionContext();
     const [questionList, setQuestionList] = useState();
 
     useEffect(() => {
-        if (!questions) return;
+        if (!questions.length > 0) return;
         const temp = [...questions];
         temp?.splice(-questionCounter, questionCounter);
         setQuestionList(temp);
@@ -31,9 +31,13 @@ const Home = () => {
                     </GridItem>
                     <GridItem area="card">
                         {questionList?.length > 0 && (
-                            <Wrapper onVote={(item, vote) => nextQuestion(vote)}>
+                            <Wrapper
+                                onVote={(item, vote) => {
+                                    nextQuestion(item.props.id, vote);
+                                }}
+                            >
                                 {questionList.map((element) => (
-                                    <Item key={element.id} whileTap={{ scale: 1.15 }}>
+                                    <Item id={element.question_id} key={element.question_id} whileTap={{ scale: 1.15 }}>
                                         <span>{element.question}</span>
                                     </Item>
                                 ))}
@@ -44,7 +48,7 @@ const Home = () => {
                         <Range value={formations?.length || 0} />
                     </GridItem>
                     <GridItem area="buttons">
-                        <ButtonNav />
+                        <ButtonNav active={questionList?.length > 0} />
                     </GridItem>
                     <GridItem area="navbar">
                         <Navbar />

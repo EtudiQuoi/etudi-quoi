@@ -13,7 +13,7 @@ const App = ({ Component, pageProps }) => (
                 name="viewport"
                 content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
             />
-            <title>Etudi'Quoi</title>
+            <title>Etudi'quoi</title>
             <meta
                 name="description"
                 content="Etudi'Quoi c'est l'app qui te permet te trouver la formation qui te correspond. T'en dis quoi ?"
@@ -24,7 +24,25 @@ const App = ({ Component, pageProps }) => (
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-            <link rel="manifest" href="/manifest.json" />
+            {/* <link rel="manifest" href="/manifest.json" /> */}
+
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://etudiquoi.com/" />
+            <meta property="og:title" content="Etudi'quoi" />
+            <meta
+                property="og:description"
+                content="Etudi'Quoi c'est l'app qui te permet te trouver la formation qui te correspond. T'en dis quoi ?"
+            />
+            <meta property="og:image" content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg" />
+
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="https://etudiquoi.com/" />
+            <meta property="twitter:title" content="Etudi'quoi" />
+            <meta
+                property="twitter:description"
+                content="Etudi'Quoi c'est l'app qui te permet te trouver la formation qui te correspond. T'en dis quoi ?"
+            />
+            <meta property="twitter:image" content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg" />
         </Head>
         <ThemeProvider theme={lightTheme}>
             <QuestionWrapper>
