@@ -11,12 +11,12 @@ export default function Navbar() {
     return (
         <Nav>
             <Link href="/">
-                <a>
+                <a title="Swipe">
                     <CardIcon active={router.pathname === "/"} />
                 </a>
             </Link>
             <Link href="/results">
-                <a>
+                <a title="Résultats">
                     <ChartIcon active={router.pathname === "/results"} />
                 </a>
             </Link>
