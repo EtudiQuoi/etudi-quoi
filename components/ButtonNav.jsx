@@ -9,11 +9,11 @@ export default function ButtonNav(props) {
 
     return (
         <ButtonContainer>
-            <RoundButton onClick={() => props.active && voteFunction && voteFunction("left")} layout="cross" />
+            <RoundButton title="Non" onClick={() => props.active && voteFunction && voteFunction("left")} layout="cross" />
             <RoundButton layout="text" size="small">
                 Passer
             </RoundButton>
-            <RoundButton onClick={() => props.active && voteFunction && voteFunction("right")} layout="check" />
+            <RoundButton title="Oui" onClick={() => props.active && voteFunction && voteFunction("right")} layout="check" />
         </ButtonContainer>
     );
 }

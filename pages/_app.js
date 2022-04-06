@@ -9,10 +9,7 @@ const App = ({ Component, pageProps }) => (
         <Head>
             <meta charSet="utf-8" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-            <meta
-                name="viewport"
-                content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
-            />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Etudi'quoi</title>
             <meta
                 name="description"
@@ -33,7 +30,10 @@ const App = ({ Component, pageProps }) => (
                 property="og:description"
                 content="Etudi'Quoi c'est l'app qui te permet te trouver la formation qui te correspond. T'en dis quoi ?"
             />
-            <meta property="og:image" content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg" />
+            <meta
+                property="og:image"
+                content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg"
+            />
 
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="https://etudiquoi.com/" />
@@ -42,7 +42,10 @@ const App = ({ Component, pageProps }) => (
                 property="twitter:description"
                 content="Etudi'Quoi c'est l'app qui te permet te trouver la formation qui te correspond. T'en dis quoi ?"
             />
-            <meta property="twitter:image" content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg" />
+            <meta
+                property="twitter:image"
+                content="https://res.cloudinary.com/hf10ee93o/image/upload/v1648409477/etudiquoi-meta-image_tdbk4e.jpg"
+            />
         </Head>
         <ThemeProvider theme={lightTheme}>
             <QuestionWrapper>
