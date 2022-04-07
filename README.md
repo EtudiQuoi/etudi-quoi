@@ -8,4 +8,5 @@ Test the app here : https://etudiquoi.com/
 ## Copyrights ©
 
 Maxence BREUILLES ([@MisterAzix](https://github.com/MisterAzix))<br />
-Nicolas MARSAN ([@NicoooM](https://github.com/NicoooM))
+Nicolas MARSAN ([@NicoooM](https://github.com/NicoooM))<br />
+Camille Fourcade ([@ODrimm](https://github.com/ODrimm))
