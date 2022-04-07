@@ -31,7 +31,7 @@ const Tutorial = () => {
               : "Choisis la formation qui te convient"}
           </H2>
         </GridItem>
-        <GridItem area="slider">
+        <GridItem>
           <TutoSlide slideNumber={slideNumber} />
         </GridItem>
         <GridItem area="button">

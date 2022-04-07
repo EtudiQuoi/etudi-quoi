@@ -1,46 +1,76 @@
+import { motion } from "framer-motion";
 import styled from "@emotion/styled";
 
 import CardIcon from "../icons/CardIcon";
 import CardResult from "../components/CardResult";
 import SchoolCard from "../components/SchoolCard";
 
+const Slide1 = () => {
+  return (
+    <motion.div
+      initial={{ x: 500, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -500, opacity: 0 }}
+      transition={{ duration: 0.3, type: "spring" }}
+    >
+      <CardIcon type="tutorial" />
+    </motion.div>
+  );
+};
+
+const Slide2 = () => {
+  return (
+    <motion.div
+      initial={{ x: 500, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -500, opacity: 0 }}
+      transition={{ duration: 0.3, type: "spring" }}
+    >
+      <CardsList>
+        <CardResult
+          type="Bachelor Universitaire de Technologie"
+          title="Métiers du Multimédia et de l’internet"
+          percentage="88"
+        />
+        <Separator />
+        <CardResult
+          type="Bachelor Universitaire de Technologie"
+          title="Communication des organisations"
+          percentage="76"
+        />
+      </CardsList>
+      <H3>Tes formations apparaissent en fonction de tes centres d’intêrets</H3>
+    </motion.div>
+  );
+};
+
+const Slide3 = () => {
+  return (
+    <Container
+      initial={{ x: 500, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -500, opacity: 0 }}
+      transition={{ duration: 0.3, type: "spring" }}
+    >
+      <h3>Métiers du Multimédia et de l'Internet</h3>
+      <SchoolsList>
+        <SchoolCard>IUT Bordeaux</SchoolCard>
+        <SchoolCard>IUT Laval</SchoolCard>
+        <SchoolCard>IUT Toulon</SchoolCard>
+        <SchoolCard>IUT Tours</SchoolCard>
+      </SchoolsList>
+    </Container>
+  );
+};
+
 const TutoSlide = ({ slideNumber }) => {
-  if (slideNumber === 1) {
-    return <CardIcon type="tutorial" />;
-  } else if (slideNumber === 2) {
-    return (
-      <>
-        <CardsList>
-          <CardResult
-            type="Bachelor Universitaire de Technologie"
-            title="Métiers du Multimédia et de l’internet"
-            percentage="88"
-          />
-          <Separator />
-          <CardResult
-            type="Bachelor Universitaire de Technologie"
-            title="Communication des organisations"
-            percentage="76"
-          />
-        </CardsList>
-        <H3>
-          Tes formations apparaissent en fonction de tes centres d’intêrets
-        </H3>
-      </>
-    );
-  } else {
-    return (
-      <Container>
-        <h3>Métiers du Multimédia et de l'Internet</h3>
-        <SchoolsList>
-          <SchoolCard>IUT Bordeaux</SchoolCard>
-          <SchoolCard>IUT Laval</SchoolCard>
-          <SchoolCard>IUT Toulon</SchoolCard>
-          <SchoolCard>IUT Tours</SchoolCard>
-        </SchoolsList>
-      </Container>
-    );
-  }
+  return (
+    <>
+      {slideNumber === 1 && <Slide1 />}
+      {slideNumber === 2 && <Slide2 />}
+      {slideNumber === 3 && <Slide3 />}
+    </>
+  );
 };
 
 const CardsList = styled.ul`
@@ -57,7 +87,7 @@ const Separator = styled.hr`
   width: 100%;
 `;
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 1rem;
