@@ -27,19 +27,20 @@ def optional_chain(root, *keys):
     return result
 
 for fiche in json_output['FICHES']['FICHE']:
-    new_json['FICHES'].append({ 
-        'ID_FICHE': optional_chain(fiche, 'ID_FICHE'), 
-        'NUMERO_FICHE': optional_chain(fiche, 'NUMERO_FICHE'), 
-        'INTITULE': optional_chain(fiche, 'INTITULE'), 
-        'ABREGE': optional_chain(fiche, 'ABREGE'), 
-        'CODES_NSF': optional_chain(fiche, 'CODES_NSF'), 
-        'ACTIVITES_VISEES': optional_chain(fiche, 'ACTIVITES_VISEES'), 
-        'CAPACITES_ATTESTEES': optional_chain(fiche, 'CAPACITES_ATTESTEES'), 
-        'SECTEURS_ACTIVITE': optional_chain(fiche, 'SECTEURS_ACTIVITE'), 
-        'TYPE_EMPLOI_ACCESSIBLES': optional_chain(fiche, 'TYPE_EMPLOI_ACCESSIBLES'), 
-        'CODES_ROME': optional_chain(fiche, 'CODES_ROME'),
-        'BLOCS_COMPETENCES': optional_chain(fiche, 'BLOCS_COMPETENCES'),
-    })
+    if optional_chain(fiche, 'BLOCS_COMPETENCES') is not None:
+        new_json['FICHES'].append({ 
+            'ID_FICHE': optional_chain(fiche, 'ID_FICHE'), 
+            'NUMERO_FICHE': optional_chain(fiche, 'NUMERO_FICHE'), 
+            'INTITULE': optional_chain(fiche, 'INTITULE'), 
+            'ABREGE': optional_chain(fiche, 'ABREGE'), 
+            'CODES_NSF': optional_chain(fiche, 'CODES_NSF'), 
+            'ACTIVITES_VISEES': optional_chain(fiche, 'ACTIVITES_VISEES'), 
+            'CAPACITES_ATTESTEES': optional_chain(fiche, 'CAPACITES_ATTESTEES'), 
+            'SECTEURS_ACTIVITE': optional_chain(fiche, 'SECTEURS_ACTIVITE'), 
+            'TYPE_EMPLOI_ACCESSIBLES': optional_chain(fiche, 'TYPE_EMPLOI_ACCESSIBLES'), 
+            'CODES_ROME': optional_chain(fiche, 'CODES_ROME'),
+            'BLOCS_COMPETENCES': optional_chain(fiche, 'BLOCS_COMPETENCES'),
+        })
 
 with open("{}/{}.json".format(dir, file_name), "w", encoding='utf-8') as outfile:
     json.dump(new_json, outfile, indent=4)
