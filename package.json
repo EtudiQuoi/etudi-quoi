@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "convert": "python ./data/converter.py",
     "dev": "next",
     "build": "next build",
     "start": "next start"
