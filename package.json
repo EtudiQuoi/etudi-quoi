@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "convert": "python ./data/converter.py",
+    "simulation": "node ./data/simulation.js",
     "dev": "next",
     "build": "next build",
     "start": "next start"
