@@ -102,4 +102,8 @@ const Item = styled.div`
         let rotation = Math.random() * (5 - -5) + -5;
         return `rotate(${rotation}deg)`;
     }};
+
+    span:first-letter {
+        text-transform: capitalize;
+    }
 `;
