@@ -1,10 +1,12 @@
 import xmltodict
 import json
+import os
 
 file_name = 'data'
+dir = os.path.dirname(os.path.realpath(__file__))
 print('converting...')
 
-with open('{}.xml'.format(file_name), 'r', encoding='utf-8') as myfile:
+with open('{}/{}.xml'.format(dir, file_name), 'r', encoding='utf-8') as myfile:
     obj = xmltodict.parse(myfile.read())
 
 json_object = json.dumps(obj, indent = 4)
@@ -39,5 +41,5 @@ for fiche in json_output['FICHES']['FICHE']:
         'BLOCS_COMPETENCES': optional_chain(fiche, 'BLOCS_COMPETENCES'),
     })
 
-with open("{}.json".format(file_name), "w", encoding='utf-8') as outfile:
+with open("{}/{}.json".format(dir, file_name), "w", encoding='utf-8') as outfile:
     json.dump(new_json, outfile, indent=4)
