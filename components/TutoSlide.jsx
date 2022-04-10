@@ -57,7 +57,7 @@ const Slide2 = ({ direction }) => {
           percentage="76"
         />
       </CardsList>
-      <H3>Tes formations apparaissent en fonction de tes centres d’intêrets</H3>
+      <h3>Tes formations apparaissent en fonction de tes centres d’intêrets</h3>
     </ContainerAnimation>
   );
 };
@@ -87,11 +87,10 @@ const TutoSlide = ({ slideNumber, direction }) => {
 };
 
 const CardsList = styled.ul`
-  padding: 0 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 100vw;
+  width: 100%;
 `;
 
 const Separator = styled.hr`
@@ -102,22 +101,19 @@ const Separator = styled.hr`
 `;
 
 const Container = styled(motion.div)`
+  padding: 0 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
+  max-width: 100vw;
 `;
 
 const SchoolsList = styled.ul`
-  padding: 0 3rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`;
-
-const H3 = styled.h3`
-  padding: 0 3rem;
 `;
 
 export default TutoSlide;

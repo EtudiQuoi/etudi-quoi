@@ -114,6 +114,7 @@ const Bullet = styled.div`
   height: 0.7rem;
   width: 0.7rem;
   border-radius: 1rem;
+  cursor: pointer;
   ${(props) => {
     if (props.active) {
       return css`
