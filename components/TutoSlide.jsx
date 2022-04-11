@@ -48,13 +48,13 @@ const Slide2 = ({ direction }) => {
         <CardResult
           type="Bachelor Universitaire de Technologie"
           title="Métiers du Multimédia et de l’internet"
-          percentage="88"
+          disabled
         />
         <Separator />
         <CardResult
           type="Bachelor Universitaire de Technologie"
           title="Communication des organisations"
-          percentage="76"
+          disabled
         />
       </CardsList>
       <h3>Tes formations apparaissent en fonction de tes centres d’intêrets</h3>

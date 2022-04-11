@@ -69,7 +69,7 @@ const TutorialContent = () => {
             ? "Swipe les propositions qui te caractérisent"
             : slideNumber === 2
             ? "Découvre les formations qui te correspondent"
-            : "Trouve les établissements qui proposent la formation qui t'intéresse"}
+            : "Trouve les établissements qui proposent la formation"}
         </H2>
       </GridItem>
       <GridItem
@@ -100,7 +100,7 @@ const TutorialContent = () => {
 
 const H2 = styled.h2`
   font-size: 1.5rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 `;
 
 const GridItem = styled.div`
