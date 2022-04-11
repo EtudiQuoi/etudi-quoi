@@ -4,8 +4,8 @@ export default function CardIcon(props) {
   if (props.active === true) {
     return (
       <svg
-        width="51"
-        height="52"
+        width="50"
+        height="50"
         viewBox="0 0 51 52"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -167,8 +167,8 @@ export default function CardIcon(props) {
   } else {
     return (
       <svg
-        width="49"
-        height="51"
+        width="50"
+        height="50"
         viewBox="0 0 49 51"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
