@@ -6,14 +6,14 @@ const CardResult = ({ type, title, percentage, ...props }) => {
         <ListItem>
             <FormationType>{type}</FormationType>
             <FormationTitle>{title}</FormationTitle>
-            <BottomInfo>
+            {/* <BottomInfo>
                 <Label htmlFor="pertinence">Pertinence</Label>
                 <ProgressBar id="pertinence" value={percentage} max="100">
                     {percentage}%
                 </ProgressBar>
                 <p>{percentage}%</p>
                 <RoundButton size="tiny" layout="arrow" />
-            </BottomInfo>
+            </BottomInfo> */}
         </ListItem>
     );
 };

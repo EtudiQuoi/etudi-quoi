@@ -1,11 +1,16 @@
 import { ThemeContext } from "@emotion/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 export default function Logo(props) {
     return (
         <H1 {...props}>
-            <span>Etudi'</span>quoi
+            <Link href="/">
+                <a title="Etudi'Quoi">
+                    <span>Etudi'</span>quoi
+                </a>
+            </Link>
         </H1>
     );
 }
@@ -13,6 +18,11 @@ export default function Logo(props) {
 const H1 = styled.h1`
     font-weight: bold;
     color: ${({ theme }) => theme.primaryHover};
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 
     span {
         color: ${({ theme }) => theme.primary};
@@ -24,7 +34,7 @@ const H1 = styled.h1`
                 font-size: 4.5rem;
             `;
         } else {
-            return css`    
+            return css`
                 font-size: 3rem;
             `;
         }
