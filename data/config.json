@@ -1,418 +1,501 @@
 {
-    "questions": [
-        {
-            "id": 0,
-            "label": "As-tu un bon sens du relationnel ?",
-            "keywords": ["travail d'équipe", "travail en équipe", "coopération", "commerce"],
-            "nsf": ["335p", "335t", "335w", "310p", "312p", "312t", "312v", "315", "320", "332", "41"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 1,
-            "label": "Es-tu à l'aise avec les enfants ?",
-            "keywords": ["enfants", "enfant", "education"],
-            "nsf": ["335t", "335w"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 2,
-            "label": "Les nouvelles technologies t'interressent ?",
-            "keywords": ["technologies", "numérique", "informatique", "technologique"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 3,
-            "label": "Aimerais tu avoir des responsabilités ?",
-            "keywords": ["diriger", "coordonner"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 4,
-            "label": "Aimes-tu travailler en groupes ?",
-            "keywords": ["travail d'équipe", "travail en équipe", "coopération"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 5,
-            "label": "Les cours théoriques t'ennuient-ils ?",
-            "keywords": ["magistraux", "théories"],
-            "nsf": [],
-            "strength": "-1",
-            "type": ["licence", "master"]
-        },
-        {
-            "id": 6,
-            "label": "Tu aimes surtout les TP, les projets et la pratique",
-            "keywords": ["pratique", "TP", "projets"],
-            "nsf": [],
-            "strength": "1",
-            "type": ["BUT", "CAP", "BTS", "BEP"]
-        },
-        {
-            "id": 7,
-            "label": "Aimes-tu travailler seul ?",
-            "keywords": ["autonomie", "indépendance", "autodidacte"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 8,
-            "label": "As-tu besoin d'être accompagné dans ton travail ?",
-            "keywords": ["autonomie", "indépendance", "autodidacte"],
-            "nsf": [],
-            "strength": "-1",
-            "type": []
-        },
-        {
-            "id": 9,
-            "label": "Arrives-tu à rester serein lors des situations stressantes ?",
-            "keywords": ["diriger", "coordonner", "responsabilité"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 10,
-            "label": "Lors d'un changement de situation, met-tu beaucoup de temps à t'adapter ?",
-            "keywords": ["polyvalent", "polyvalence", "adaptation"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 11,
-            "label": "Pendant un travail de groupe, prend tu souvent des initiatives ?",
-            "keywords": ["autonomie", "indépendance", "initiative"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 12,
-            "label": "As-tu envie de mettre ta créativité à profit dans tes études ?",
-            "keywords": ["créatif", "créativité", "imaginatif", "imagination", "design", "création"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 13,
-            "label": "Es-tu rigoureux dans ton travail ?",
-            "keywords": ["rigueur", "rigoureu", "rigoureux", "appliqué"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 14,
-            "label": "Est ce que tu aimes organiser et ordonner les choses ?",
-            "keywords": ["diriger", "coordonner", "gestion de projet", "organiser"],
-            "nsf": ["311p", "310", "314", "315", "320p", "322p", "323p"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 15,
-            "label": "Une formation dans l'aménagement des espaces verts t'en penses quoi ?",
-            "keywords": ["vert", "nature", "environnement", "nature"],
-            "nsf": ["214"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 16,
-            "label": "une formation dans l'artisanat d'art, le design t'en penses quoi ?",
-            "keywords": ["art", "artisanat", "design", "artistique"],
-            "nsf": [
-                "132f",
-                "134f",
-                "223v",
-                "224v",
-                "225v",
-                "230v",
-                "231v",
-                "232v",
-                "240v",
-                "240w",
-                "243v",
-                "322v",
-                "342v"
-            ],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 17,
-            "label": "une formation dans la biologie, la chimie t'en penses quoi ?",
-            "keywords": ["chimie", "biologie", "science", "SVT", "nature"],
-            "nsf": ["112", "113", "118", "111", "114c", "116", "136f"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 18,
-            "label": "une formation dans le commerce t'en penses quoi ?",
-            "keywords": ["commerce", "communication"],
-            "nsf": ["136g", "312"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 19,
-            "label": "une formation dans l'immobilier t'en penses quoi ?",
-            "keywords": ["immobilier", "vente", "commerce"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 20,
-            "label": "une formation dans la communication, le journalisme, le marketing t'en penses quoi ?",
-            "keywords": ["communication", "journalisme", "journaliste", "vente", "marketing", "pub", "publicité"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 21,
-            "label": "une formation dans le graphisme t'en penses quoi ?",
-            "keywords": ["design", "graphisme", "création", "visuel", "art", "creer"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 22,
-            "label": "une formation dans le droit, la justice t'en penses quoi ?",
-            "keywords": ["droit", "justice", "avocat", "juge", "code"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 23,
-            "label": "une formation dans l'enseignement, la formation, l'insertion t'en penses quoi ?",
-            "keywords": ["enseignement", "insertion", "orientation"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 24,
-            "label": "une formation dans l'hôtellerie, la restauration, le tourisme t'en penses quoi ?",
-            "keywords": ["hôtellerie", "service", "restauration", "tourisme", "touriste", "vacance"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 25,
-            "label": "une formation dans la mécanique, l'automobile t'en penses quoi ?",
-            "keywords": ["mécanique", "automobile", "garage"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 26,
-            "label": "une formation dans la santé, le paramédical t'en penses quoi ?",
-            "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 27,
-            "label": "une formation dans les soins, l'esthétique, la coiffure t'en penses quoi ?",
-            "keywords": ["soins", "soin", "esthétique", "esthétisme", "coiffure", "coiffeur"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 28,
-            "label": "le secteur  de l'alimentation, l'agroalimentaire t'en dis quoi ?",
-            "keywords": ["alimentation", "alimentaire", "agroalimentaire", "nourriture"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 29,
-            "label": "le secteur  de la banque, la finance, l'assurance t'en dis quoi ?",
-            "keywords": ["banque", "finance", "assurance", "economie"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 30,
-            "label": "le secteur  du btp, de l'urbanisme t'en dis quoi ?",
-            "keywords": ["btp", "urbanisme", "urbain", "travaux"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 31,
-            "label": "le secteur  de l'énergie t'en dis quoi ?",
-            "keywords": ["energie", "environnement"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 32,
-            "label": "le secteur  de l'environnement, les déchets, la propreté t'en dis quoi ?",
-            "keywords": ["environnement", "nature", "déchets", "propreté", "nettoyage"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 33,
-            "label": "le secteur  de la gestion, la comptabilité, les rh t'en dis quoi ?",
-            "keywords": ["gestion", "comptabilité", "rh", "diriger", "direction"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 34,
-            "label": "le secteur  de l'humanitaire t'en dis quoi ?",
-            "keywords": ["humanitaire", "bénévolat", "bénévole", "aide"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 35,
-            "label": "le secteur  des matériaux, de l'industrie t'en dis quoi ?",
-            "keywords": ["industrie", "matériaux", "production"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 36,
-            "label": "le secteur  du secrétariat, de l'accueil t'en dis quoi ?",
-            "keywords": ["secrétariat", "accueil", "secrétaire"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 37,
-            "label": "le secteur  du transport, de la logistique t'en dis quoi ?",
-            "keywords": ["transport", "logistique", "conduite", "coordoner"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 38,
-            "label": "aimes-tu les animaux  ?",
-            "keywords": ["animaux", "animal"],
-            "nsf": [],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 39,
-            "label": "aimes-tu le cinéma, l'audiovisuel ou le jeux vidéo  ?",
-            "keywords": ["cinéma", "audiovisuel", "jeux vidéo", "art", "visuel", "numérique"],
-            "nsf": ["132g", "321v", "323"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 40,
-            "label": "aimes-tu les livres, l'édition, l'imprimerie  ?",
-            "keywords": ["livre", "édition", "imprimerie", "littéraire", "libraire"],
-            "nsf": ["322", "131"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 41,
-            "label": "aimes-tu la physique, les maths  ?",
-            "keywords": ["physique", "math", "science", "calcul"],
-            "nsf": ["11"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 42,
-            "label": "aimes-tu le sport, l'animation  ?",
-            "keywords": ["sport", "animation"],
-            "nsf": ["335w", "335t"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 43,
-            "label": "as-tu un attrait pour l'architecture, la décoration  ?",
-            "keywords": ["décoration", "design", "architecture"],
-            "nsf": ["230n", "233", "234v"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 44,
-            "label": "as-tu un attrait pour le design, la mode  ?",
-            "keywords": ["design", "mode", "couture"],
-            "nsf": ["242", "243", "132f"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 45,
-            "label": "as-tu un attrait pour la culture, le spectacle, le patrimoine  ?",
-            "keywords": ["culture", "spectacle", "patrimoine", "musée", "exposition"],
-            "nsf": ["342"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 46,
-            "label": "as-tu un attrait pour l'éléctricité, l'éléctronique, la robotique  ?",
-            "keywords": ["éléctronique", "technologie", "robotique", "éléctricité", "informatique"],
-            "nsf": ["255"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 47,
-            "label": "as-tu un attrait pour l'informatique, le web, les réseaux  ?",
-            "keywords": ["informatique", "web", "réseau", "technologie", "internet"],
-            "nsf": ["326"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 48,
-            "label": "as-tu un attrait pour les lettres, les sciences humaines, les langues  ?",
-            "keywords": ["langues", "sciences humaines", "lettre", "écriture"],
-            "nsf": ["120 ", "131", "136", "125"],
-            "strength": "1",
-            "type": []
-        },
-        {
-            "id": 49,
-            "label": "as-tu un attrait pour le social, la petite enfance, les services à la personne  ?",
-            "keywords": ["social", "enfant", "enfance", "service à la personne"],
-            "nsf": ["332 ", "330", "335", "421 "],
-            "strength": "1",
-            "type": []
-        }
-    ]
+  "questions": [
+    {
+      "id": 0,
+      "label": "As-tu un bon sens du relationnel ?",
+      "keywords": [
+        "travail d'équipe",
+        "travail en équipe",
+        "coopération",
+        "commerce"
+      ],
+      "nsf": [
+        "335p",
+        "335t",
+        "335w",
+        "310p",
+        "312p",
+        "312t",
+        "312v",
+        "315",
+        "320",
+        "332",
+        "41"
+      ],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 1,
+      "label": "Es-tu à l'aise avec les enfants ?",
+      "keywords": ["enfants", "enfant", "education"],
+      "nsf": ["335t", "335w"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 2,
+      "label": "Les nouvelles technologies t'interressent ?",
+      "keywords": [
+        "technologies",
+        "numérique",
+        "informatique",
+        "technologique"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 3,
+      "label": "Aimerais tu avoir des responsabilités ?",
+      "keywords": ["diriger", "coordonner"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 4,
+      "label": "Aimes-tu travailler en groupes ?",
+      "keywords": ["travail d'équipe", "travail en équipe", "coopération"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 5,
+      "label": "Les cours théoriques t'ennuient-ils ?",
+      "keywords": ["magistraux", "théories"],
+      "nsf": [],
+      "strength": "-1",
+      "type": ["licence", "master"]
+    },
+    {
+      "id": 6,
+      "label": "Tu aimes surtout les TP, les projets et la pratique",
+      "keywords": ["pratique", "TP", "projets"],
+      "nsf": [],
+      "strength": "1",
+      "type": ["BUT", "CAP", "BTS", "BEP"]
+    },
+    {
+      "id": 7,
+      "label": "Aimes-tu travailler seul ?",
+      "keywords": ["autonomie", "indépendance", "autodidacte"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 8,
+      "label": "As-tu besoin d'être accompagné dans ton travail ?",
+      "keywords": ["autonomie", "indépendance", "autodidacte"],
+      "nsf": [],
+      "strength": "-1",
+      "type": []
+    },
+    {
+      "id": 9,
+      "label": "Arrives-tu à rester serein lors des situations stressantes ?",
+      "keywords": ["diriger", "coordonner", "responsabilité"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 10,
+      "label": "Lors d'un changement de situation, met-tu beaucoup de temps à t'adapter ?",
+      "keywords": ["polyvalent", "polyvalence", "adaptation"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 11,
+      "label": "Pendant un travail de groupe, prend tu souvent des initiatives ?",
+      "keywords": ["autonomie", "indépendance", "initiative"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 12,
+      "label": "As-tu envie de mettre ta créativité à profit dans tes études ?",
+      "keywords": [
+        "créatif",
+        "créativité",
+        "imaginatif",
+        "imagination",
+        "design",
+        "création"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 13,
+      "label": "Es-tu rigoureux dans ton travail ?",
+      "keywords": ["rigueur", "rigoureu", "rigoureux", "appliqué"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 14,
+      "label": "Est ce que tu aimes organiser et ordonner les choses ?",
+      "keywords": ["diriger", "coordonner", "gestion de projet", "organiser"],
+      "nsf": ["311p", "310", "314", "315", "320p", "322p", "323p"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 15,
+      "label": "Une formation dans l'aménagement des espaces verts t'en penses quoi ?",
+      "keywords": ["vert", "nature", "environnement", "nature"],
+      "nsf": ["214"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 16,
+      "label": "une formation dans l'artisanat d'art, le design t'en penses quoi ?",
+      "keywords": ["art", "artisanat", "design", "artistique"],
+      "nsf": [
+        "132f",
+        "134f",
+        "223v",
+        "224v",
+        "225v",
+        "230v",
+        "231v",
+        "232v",
+        "240v",
+        "240w",
+        "243v",
+        "322v",
+        "342v"
+      ],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 17,
+      "label": "une formation dans la biologie, la chimie t'en penses quoi ?",
+      "keywords": ["chimie", "biologie", "science", "SVT", "nature"],
+      "nsf": ["112", "113", "118", "111", "114c", "116", "136f"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 18,
+      "label": "une formation dans le commerce t'en penses quoi ?",
+      "keywords": ["commerce", "communication"],
+      "nsf": ["136g", "312"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 19,
+      "label": "une formation dans l'immobilier t'en penses quoi ?",
+      "keywords": ["immobilier", "vente", "commerce"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 20,
+      "label": "une formation dans la communication, le journalisme, le marketing t'en penses quoi ?",
+      "keywords": [
+        "communication",
+        "journalisme",
+        "journaliste",
+        "vente",
+        "marketing",
+        "pub",
+        "publicité"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 21,
+      "label": "une formation dans le graphisme t'en penses quoi ?",
+      "keywords": ["design", "graphisme", "création", "visuel", "art", "creer"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 22,
+      "label": "une formation dans le droit, la justice t'en penses quoi ?",
+      "keywords": ["droit", "justice", "avocat", "juge", "code"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 23,
+      "label": "une formation dans l'enseignement, la formation, l'insertion t'en penses quoi ?",
+      "keywords": ["enseignement", "insertion", "orientation"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 24,
+      "label": "une formation dans l'hôtellerie, la restauration, le tourisme t'en penses quoi ?",
+      "keywords": [
+        "hôtellerie",
+        "service",
+        "restauration",
+        "tourisme",
+        "touriste",
+        "vacance"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 25,
+      "label": "une formation dans la mécanique, l'automobile t'en penses quoi ?",
+      "keywords": ["mécanique", "automobile", "garage"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 26,
+      "label": "une formation dans la santé, le paramédical t'en penses quoi ?",
+      "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 27,
+      "label": "une formation dans les soins, l'esthétique, la coiffure t'en penses quoi ?",
+      "keywords": [
+        "soins",
+        "soin",
+        "esthétique",
+        "esthétisme",
+        "coiffure",
+        "coiffeur"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 28,
+      "label": "le secteur  de l'alimentation, l'agroalimentaire t'en dis quoi ?",
+      "keywords": [
+        "alimentation",
+        "alimentaire",
+        "agroalimentaire",
+        "nourriture"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 29,
+      "label": "le secteur  de la banque, la finance, l'assurance t'en dis quoi ?",
+      "keywords": ["banque", "finance", "assurance", "economie"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 30,
+      "label": "le secteur  du btp, de l'urbanisme t'en dis quoi ?",
+      "keywords": ["btp", "urbanisme", "urbain", "travaux"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 31,
+      "label": "le secteur  de l'énergie t'en dis quoi ?",
+      "keywords": ["energie", "environnement"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 32,
+      "label": "le secteur  de l'environnement, les déchets, la propreté t'en dis quoi ?",
+      "keywords": [
+        "environnement",
+        "nature",
+        "déchets",
+        "propreté",
+        "nettoyage"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 33,
+      "label": "le secteur  de la gestion, la comptabilité, les rh t'en dis quoi ?",
+      "keywords": ["gestion", "comptabilité", "rh", "diriger", "direction"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 34,
+      "label": "le secteur  de l'humanitaire t'en dis quoi ?",
+      "keywords": ["humanitaire", "bénévolat", "bénévole", "aide"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 35,
+      "label": "le secteur  des matériaux, de l'industrie t'en dis quoi ?",
+      "keywords": ["industrie", "matériaux", "production"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 36,
+      "label": "le secteur  du secrétariat, de l'accueil t'en dis quoi ?",
+      "keywords": ["secrétariat", "accueil", "secrétaire"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 37,
+      "label": "le secteur  du transport, de la logistique t'en dis quoi ?",
+      "keywords": ["transport", "logistique", "conduite", "coordoner"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 38,
+      "label": "aimes-tu les animaux  ?",
+      "keywords": ["animaux", "animal"],
+      "nsf": [],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 39,
+      "label": "aimes-tu le cinéma, l'audiovisuel ou le jeux vidéo  ?",
+      "keywords": [
+        "cinéma",
+        "audiovisuel",
+        "jeux vidéo",
+        "art",
+        "visuel",
+        "numérique"
+      ],
+      "nsf": ["132g", "321v", "323"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 40,
+      "label": "aimes-tu les livres, l'édition, l'imprimerie  ?",
+      "keywords": ["livre", "édition", "imprimerie", "littéraire", "libraire"],
+      "nsf": ["322", "131"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 41,
+      "label": "aimes-tu la physique, les maths  ?",
+      "keywords": ["physique", "math", "science", "calcul"],
+      "nsf": ["11"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 42,
+      "label": "aimes-tu le sport, l'animation  ?",
+      "keywords": ["sport", "animation"],
+      "nsf": ["335w", "335t"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 43,
+      "label": "as-tu un attrait pour l'architecture, la décoration  ?",
+      "keywords": ["décoration", "design", "architecture"],
+      "nsf": ["230n", "233", "234v"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 44,
+      "label": "as-tu un attrait pour le design, la mode  ?",
+      "keywords": ["design", "mode", "couture"],
+      "nsf": ["242", "243", "132f"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 45,
+      "label": "as-tu un attrait pour la culture, le spectacle, le patrimoine  ?",
+      "keywords": ["culture", "spectacle", "patrimoine", "musée", "exposition"],
+      "nsf": ["342"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 46,
+      "label": "as-tu un attrait pour l'éléctricité, l'éléctronique, la robotique  ?",
+      "keywords": [
+        "éléctronique",
+        "technologie",
+        "robotique",
+        "éléctricité",
+        "informatique"
+      ],
+      "nsf": ["255"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 47,
+      "label": "as-tu un attrait pour l'informatique, le web, les réseaux  ?",
+      "keywords": ["informatique", "web", "réseau", "technologie", "internet"],
+      "nsf": ["326"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 48,
+      "label": "as-tu un attrait pour les lettres, les sciences humaines, les langues  ?",
+      "keywords": ["langues", "sciences humaines", "lettre", "écriture"],
+      "nsf": ["120 ", "131", "136", "125"],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 49,
+      "label": "as-tu un attrait pour le social, la petite enfance, les services à la personne  ?",
+      "keywords": ["social", "enfant", "enfance", "service à la personne"],
+      "nsf": ["332 ", "330", "335", "421 "],
+      "strength": "1",
+      "type": []
+    },
+    {
+      "id": 50,
+      "label": "",
+      "keywords": ["", ""],
+      "nsf": ["", ""],
+      "strength": "1",
+      "type": []
+    }
+  ]
 }
