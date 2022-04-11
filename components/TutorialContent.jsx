@@ -12,9 +12,13 @@ const TutorialContent = () => {
   const [touchEnd, setTouchEnd] = useState(0);
   const [direction, setDirection] = useState("right");
 
+  const changeSlideNumber = (number) => {
+    setSlideNumber(slideNumber + number);
+  };
+
   const onClickNextButton = () => {
     setDirection("right");
-    setSlideNumber(slideNumber + 1);
+    changeSlideNumber(1);
   };
 
   const onClickBullet = (bulletNumber) => {
@@ -34,7 +38,7 @@ const TutorialContent = () => {
       touchEnd !== 0
     ) {
       setDirection("right");
-      setSlideNumber(slideNumber + 1);
+      changeSlideNumber(1);
       setTouchEnd(0);
       setTouchStart(0);
       return;
@@ -45,7 +49,7 @@ const TutorialContent = () => {
       touchEnd !== 0
     ) {
       setDirection("left");
-      setSlideNumber(slideNumber - 1);
+      changeSlideNumber(-1);
       setTouchEnd(0);
       setTouchStart(0);
       return;
@@ -65,7 +69,7 @@ const TutorialContent = () => {
             ? "Swipe les propositions qui te caractérisent"
             : slideNumber === 2
             ? "Découvre les formations qui te correspondent"
-            : "Choisis la formation qui te convient"}
+            : "Trouve les établissements qui proposent la formation qui t'intéresse"}
         </H2>
       </GridItem>
       <GridItem
@@ -83,7 +87,7 @@ const TutorialContent = () => {
         {slideNumber < 3 ? (
           <Button onClick={onClickNextButton}>Suivant</Button>
         ) : (
-          <Link href={"/"}>
+          <Link href={"/questions"}>
             <a>
               <Button>Lancer</Button>
             </a>
@@ -96,7 +100,7 @@ const TutorialContent = () => {
 
 const H2 = styled.h2`
   font-size: 1.5rem;
-  padding: 0 5rem;
+  padding: 0 2rem;
 `;
 
 const GridItem = styled.div`
