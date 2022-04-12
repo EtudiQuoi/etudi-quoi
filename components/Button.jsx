@@ -29,12 +29,16 @@ const Btn = styled.button`
     if (props.type === "outlink") {
       return css`
         display: flex;
+        align-items: center;
       `;
     }
+  }}
+  ${(props) => {
     if (props.size === "small") {
       return css`
-        padding: 0.5rem 1.4rem;
+        padding: 0.7rem 0.5rem;
         font-size: 0.8rem;
+        min-height: 100%;
       `;
     } else {
       return css`

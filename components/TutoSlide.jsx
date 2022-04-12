@@ -57,7 +57,7 @@ const Slide2 = ({ direction }) => {
           disabled
         />
       </CardsList>
-      <h3>Tes formations apparaissent en fonction de tes centres d’intêrets</h3>
+      <H3>Tes formations apparaissent en fonction de tes centres d’intêrets</H3>
     </ContainerAnimation>
   );
 };
@@ -101,12 +101,13 @@ const Separator = styled.hr`
 `;
 
 const Container = styled(motion.div)`
-  padding: 0 3rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   width: 100%;
   max-width: 100vw;
+  height: 100%;
+  justify-content: space-around;
 `;
 
 const SchoolsList = styled.ul`
@@ -114,6 +115,10 @@ const SchoolsList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+`;
+
+const H3 = styled.h3`
+  font-size: 1rem;
 `;
 
 export default TutoSlide;

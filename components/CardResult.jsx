@@ -13,11 +13,11 @@ const CardResult = ({ type, title, percentage, disabled }) => {
           En savoir plus
         </Button>
         {disabled ? (
-          <Button size="small">Liste des établissements</Button>
+          <Button size="small">Établissements</Button>
         ) : (
           <Link href="/ecoles">
             <a>
-              <Button size="small">Liste des établissements</Button>
+              <Button size="small">Établissements</Button>
             </a>
           </Link>
         )}
