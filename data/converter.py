@@ -27,7 +27,8 @@ def optional_chain(root, *keys):
     return result
 
 for fiche in json_output['FICHES']['FICHE']:
-    if optional_chain(fiche, 'BLOCS_COMPETENCES') is not None:
+    # if optional_chain(fiche, 'BLOCS_COMPETENCES') is not None:
+    if optional_chain(fiche, 'CODES_NSF') is not None:
         new_json['FICHES'].append({ 
             'ID_FICHE': optional_chain(fiche, 'ID_FICHE'), 
             'NUMERO_FICHE': optional_chain(fiche, 'NUMERO_FICHE'), 
