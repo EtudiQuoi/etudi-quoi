@@ -5,7 +5,7 @@ import ArrowLinkIcon from "../icons/ArrowLinkIcon";
 
 export default function Button({ onClick, size, type, children }) {
   return (
-    <Btn onClick={onClick} size={size}>
+    <Btn onClick={onClick} size={size} type={type}>
       {children}
       {type === "outlink" && (
         <ArrowLinkIcon
@@ -29,13 +29,16 @@ const Btn = styled.button`
     if (props.type === "outlink") {
       return css`
         display: flex;
+        align-items: center;
       `;
     }
+  }}
+  ${(props) => {
     if (props.size === "small") {
       return css`
-        height: 100%;
-        padding: 0.5rem 1.4rem;
+        padding: 0.7rem 0.5rem;
         font-size: 0.8rem;
+        min-height: 100%;
       `;
     } else {
       return css`
@@ -44,9 +47,20 @@ const Btn = styled.button`
       `;
     }
   }}
+  ${(props) => {
+    if (props.type === "primary") {
+      return css`
+        color: ${props.theme.baseColor};
+        background: ${props.theme.primary};
+      `;
+    } else {
+      return css`
+        color: ${props.theme.primary};
+        background: ${props.theme.baseColor};
+      `;
+    }
+  }}
   border-radius: 0.5rem;
-  color: ${({ theme }) => theme.primary};
-  background: ${({ theme }) => theme.baseColor};
   box-shadow: 0px 8px 14px -13px rgba(77, 101, 169, 0.3);
   transition: transform ${({ theme }) => theme.transition};
 

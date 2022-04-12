@@ -73,6 +73,7 @@ const TutorialContent = () => {
         </H2>
       </GridItem>
       <GridItem
+        area="slider"
         onTouchStart={(e) => setTouchStart(e.changedTouches[0].clientX)}
         onTouchEnd={(e) => setTouchEnd(e.changedTouches[0].clientX)}
       >
