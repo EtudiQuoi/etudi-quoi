@@ -46,6 +46,7 @@ const Results = () => {
                       key={formation.formation_id}
                       type={formation.type}
                       title={formation.label}
+                      rncp={formation.rncp}
                       percentage={0}
                     />
                     {index < formationsList.length - 1 && (

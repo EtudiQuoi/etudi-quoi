@@ -3,15 +3,22 @@ import Link from "next/link";
 
 import Button from "./Button";
 
-const CardResult = ({ type, title, percentage, disabled }) => {
+const CardResult = ({ type, title, percentage, rncp, disabled }) => {
+  const rncpNumber = rncp.slice(4);
   return (
     <ListItem>
       <FormationType>{type}</FormationType>
       <FormationTitle>{title}</FormationTitle>
       <Buttons>
-        <Button size="small" type="outlink">
-          En savoir plus
-        </Button>
+        <Link
+          href={`https://www.francecompetences.fr/recherche/rncp/${rncpNumber}/`}
+        >
+          <a target="_blank">
+            <Button size="small" type="secondary" outlink>
+              En savoir plus
+            </Button>
+          </a>
+        </Link>
         {disabled ? (
           <Button size="small">Établissements</Button>
         ) : (

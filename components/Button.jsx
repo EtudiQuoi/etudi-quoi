@@ -3,11 +3,11 @@ import { css } from "@emotion/react";
 
 import ArrowLinkIcon from "../icons/ArrowLinkIcon";
 
-export default function Button({ onClick, size, type, children }) {
+export default function Button({ onClick, size, type, outlink, children }) {
   return (
     <Btn onClick={onClick} size={size} type={type}>
       {children}
-      {type === "outlink" && (
+      {outlink && (
         <ArrowLinkIcon
           css={css`
             vertical-align: middle;
@@ -26,7 +26,7 @@ const Btn = styled.button`
   font-family: "Epilogue", sans-serif;
   font-weight: 600;
   ${(props) => {
-    if (props.type === "outlink") {
+    if (props.outlink) {
       return css`
         display: flex;
         align-items: center;
@@ -52,6 +52,12 @@ const Btn = styled.button`
       return css`
         color: ${props.theme.baseColor};
         background: ${props.theme.primary};
+      `;
+    } else if (props.type === "secondary") {
+      return css`
+        color: ${props.theme.primary};
+        background: transparent;
+        border: 2px solid ${props.theme.primary};
       `;
     } else {
       return css`
