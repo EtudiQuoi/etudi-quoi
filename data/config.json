@@ -20,7 +20,22 @@
         "315",
         "320",
         "332",
-        "41"
+        "41",
+        "222r",
+        "230w",
+        "252w",
+        "325",
+        "336t",
+        "336",
+        "323t",
+        "324t",
+        "211w",
+        "334",
+        "314r",
+        "315p",
+        "310",
+        "313",
+        "252r"
       ],
       "strength": "1",
       "type": []
@@ -486,14 +501,6 @@
       "label": "as-tu un attrait pour le social, la petite enfance, les services à la personne  ?",
       "keywords": ["social", "enfant", "enfance", "service à la personne"],
       "nsf": ["332 ", "330", "335", "421 "],
-      "strength": "1",
-      "type": []
-    },
-    {
-      "id": 50,
-      "label": "",
-      "keywords": ["", ""],
-      "nsf": ["", ""],
       "strength": "1",
       "type": []
     }
