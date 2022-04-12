@@ -1,6 +1,7 @@
+const { count } = require("console");
 const fs = require("fs");
 
-console.log('Simulation...');
+console.log("Simulation...");
 
 const rawQuestionsData = fs.readFileSync(`${__dirname}/config.json`);
 const questionData = JSON.parse(rawQuestionsData);
@@ -10,12 +11,19 @@ const formationData = JSON.parse(rawFormationData);
 
 const json = { questions: [], formations: [] };
 
-const matchWord = (array, keywords) => {
+const matchWord = (array, keywords, codes) => {
     const matchArray = array.filter((formation) => {
         const regexFromKeyword = new RegExp(keywords.join("|"), "gm");
 
-        const matchTeam = JSON.stringify(formation).match(regexFromKeyword);
-        if (matchTeam) return true;
+        let nsf = false;
+        if (Array.isArray(formation.CODES_NSF?.NSF)) {
+            nsf = formation.CODES_NSF.NSF.filter((code) => codes.includes(code)).length > 0;
+        } else {
+            nsf = codes.includes(formation.CODES_NSF?.NSF?.CODE);
+        }
+
+        const match = JSON.stringify(formation).match(regexFromKeyword);
+        if (match || nsf) return true;
     });
 
     return matchArray;
@@ -30,7 +38,7 @@ formationData.FICHES.forEach((element) => {
 });
 
 questionData.questions.forEach((element) => {
-    const matchFormation = matchWord(formationData.FICHES, element.keywords);
+    const matchFormation = matchWord(formationData.FICHES, element.keywords, element.nsf);
     const formationIdArray = matchFormation.map((formation) => {
         return formation.ID_FICHE;
     });
