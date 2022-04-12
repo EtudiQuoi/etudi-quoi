@@ -15,7 +15,7 @@ const Menu = () => {
         <GridItem area="buttons" gap="2">
           <Link href="/questions">
             <a>
-              <Button>C'est parti</Button>
+              <Button type="primary">C'est parti</Button>
             </a>
           </Link>
           <Link href="/tutorial">
