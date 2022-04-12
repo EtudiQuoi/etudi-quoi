@@ -1,7 +1,7 @@
 const { count } = require("console");
 const fs = require("fs");
 
-console.log("Simulation...");
+console.log("simulation...");
 
 const rawQuestionsData = fs.readFileSync(`${__dirname}/config.json`);
 const questionData = JSON.parse(rawQuestionsData);
@@ -32,6 +32,7 @@ const matchWord = (array, keywords, codes) => {
 formationData.FICHES.forEach((element) => {
     json.formations.push({
         formation_id: element?.ID_FICHE,
+        rncp: element?.NUMERO_FICHE,
         label: element?.INTITULE,
         type: element?.ABREGE?.LIBELLE || element?.ABREGE?.CODE || null,
     });
