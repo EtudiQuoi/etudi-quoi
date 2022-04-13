@@ -14,7 +14,7 @@ const ListItem = styled.li`
   display: flex;
   list-style: none;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
 `;
 
 const P = styled.p`

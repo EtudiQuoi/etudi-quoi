@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 export const lightTheme = {
   primary: "#0C53A3",
   primaryHover: "#84B9EB",
+  secondary: "#84B9EB",
   accentColor: "#E94057",
   accentColorHover: "#F6A0AC",
   darkColor: "#083262",

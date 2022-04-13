@@ -1,7 +1,7 @@
-button => a uniquement 
+button => a uniquement => fait
 respecter les tailles de typos
 marges en rem 
-button => a
-css button via class
+button => a => fait
+css button via class => fait
 ul li dans la nav => fait
 changer title nav

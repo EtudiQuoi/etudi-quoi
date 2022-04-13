@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
 import CardIcon from "../icons/CardIcon";
+import MapIcon from "../icons/MapIcon";
 import CardResult from "../components/CardResult";
 import SchoolCard from "../components/SchoolCard";
 
@@ -46,16 +48,14 @@ const Slide2 = ({ direction }) => {
     <ContainerAnimation direction={direction}>
       <CardsList>
         <CardResult
+          className="tutorial"
           type="Bachelor Universitaire de Technologie"
           title="Métiers du Multimédia et de l’internet"
-          disabled
         />
         <Separator />
-        <CardResult
-          type="Bachelor Universitaire de Technologie"
-          title="Communication des organisations"
-          disabled
-        />
+        <CardResult className="tutorial-grey" />
+        <Separator />
+        <CardResult className="tutorial-grey" />
       </CardsList>
       <H3>Tes formations apparaissent en fonction de tes centres d’intêrets</H3>
     </ContainerAnimation>
@@ -65,13 +65,11 @@ const Slide2 = ({ direction }) => {
 const Slide3 = ({ direction }) => {
   return (
     <ContainerAnimation direction={direction}>
-      <h3>Métiers du Multimédia et de l'Internet</h3>
-      <SchoolsList>
-        <SchoolCard>IUT Bordeaux</SchoolCard>
-        <SchoolCard>IUT Laval</SchoolCard>
-        <SchoolCard>IUT Toulon</SchoolCard>
-        <SchoolCard>IUT Tours</SchoolCard>
-      </SchoolsList>
+      <MapIcon
+        css={css`
+          align-self: center;
+        `}
+      />
     </ContainerAnimation>
   );
 };
