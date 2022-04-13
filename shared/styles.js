@@ -26,13 +26,19 @@ export const globalStyles = (
         box-sizing: border-box;
       }
 
+      :root {
+        --app-height: 100%;
+      }
+
       html,
       body {
         background: #171717;
         min-height: 100%;
         font-family: "Epilogue", Helvetica, Arial, sans-serif;
         font-size: 16px;
-        height: -webkit-fill-available;
+        @media not all and (hover: hover) {
+          height: var(--app-height);
+        }
       }
     `}
   />
