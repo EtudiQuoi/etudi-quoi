@@ -9,4 +9,5 @@ Test the app here : https://etudiquoi.com/
 Maxence BREUILLES ([@MisterAzix](https://github.com/MisterAzix))<br />
 Nicolas MARSAN ([@NicoooM](https://github.com/NicoooM))<br />
 Gaëtan JESTIN ([@MerlinConnected](https://github.com/MerlinConnected))<br />
-Camille Fourcade ([@ODrimm](https://github.com/ODrimm))
+Camille Fourcade ([@ODrimm](https://github.com/ODrimm))<br />
+André Despouys Pascual ([@andredespouys](https://github.com/andredespouys))
