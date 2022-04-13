@@ -38,11 +38,11 @@ const H1 = styled.h1`
   ${(props) => {
     if (props.size === "big") {
       return css`
-        font-size: 4.5rem;
+        font-size: 3.563rem;
       `;
     } else {
       return css`
-        font-size: 3rem;
+        font-size: 2.813rem;
       `;
     }
   }}

@@ -25,7 +25,7 @@ export default function Navbar() {
           <Ul>
             <li>
               <Link href="/questions">
-                <A title="Swipe">
+                <A title="Questions">
                   <CardIcon active={router.pathname === "/questions"} />
                   <Span>Cartes</Span>
                 </A>

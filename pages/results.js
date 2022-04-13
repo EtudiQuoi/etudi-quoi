@@ -108,15 +108,11 @@ const CardsList = styled.ul`
   padding: 1rem 1.875rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.563rem;
   overflow: scroll;
   height: 100px;
   min-height: 100%;
   max-height: 100%;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 const Separator = styled.hr`

@@ -5,6 +5,7 @@ import { css } from "@emotion/react";
 
 import TutoSlide from "../components/TutoSlide";
 import Button from "../components/Button";
+import LinkTo from "./LinkTo";
 
 const TutorialContent = () => {
   const [slideNumber, setSlideNumber] = useState(1);
@@ -88,11 +89,9 @@ const TutorialContent = () => {
         {slideNumber < 3 ? (
           <Button onClick={onClickNextButton}>Suivant</Button>
         ) : (
-          <Link href={"/questions"}>
-            <a>
-              <Button>Lancer</Button>
-            </a>
-          </Link>
+          <LinkTo link="/questions" className="primary big">
+            Lancer
+          </LinkTo>
         )}
       </GridItem>
     </>
@@ -101,7 +100,8 @@ const TutorialContent = () => {
 
 const H2 = styled.h2`
   font-size: 1.5rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  color: ${({ theme }) => theme.darkColor};
 `;
 
 const GridItem = styled.div`
