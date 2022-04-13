@@ -1,0 +1,7 @@
+button => a uniquement 
+respecter les tailles de typos
+marges en rem 
+button => a
+css button via class
+ul li dans la nav => fait
+changer title nav

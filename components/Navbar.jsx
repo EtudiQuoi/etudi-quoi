@@ -22,23 +22,29 @@ export default function Navbar() {
       <Container>
         <EmptyDiv />
         <Nav>
-          <Link href="/questions">
-            <A title="Swipe">
-              <CardIcon active={router.pathname === "/questions"} />
-              <Span>Cartes</Span>
-            </A>
-          </Link>
-          <Link href="/results">
-            <A title="Résultats">
-              <ChartIcon
-                active={
-                  router.pathname === "/results" ||
-                  router.pathname === "/ecoles"
-                }
-              />
-              <Span>Résultats</Span>
-            </A>
-          </Link>
+          <Ul>
+            <li>
+              <Link href="/questions">
+                <A title="Swipe">
+                  <CardIcon active={router.pathname === "/questions"} />
+                  <Span>Cartes</Span>
+                </A>
+              </Link>
+            </li>
+            <li>
+              <Link href="/results">
+                <A title="Résultats">
+                  <ChartIcon
+                    active={
+                      router.pathname === "/results" ||
+                      router.pathname === "/ecoles"
+                    }
+                  />
+                  <Span>Résultats</Span>
+                </A>
+              </Link>
+            </li>
+          </Ul>
         </Nav>
         <SettingIcon onClick={openSetting} />
       </Container>
@@ -58,14 +64,17 @@ const EmptyDiv = styled.div`
   width: 30px;
 `;
 
-const Nav = styled.nav`
+const Nav = styled.nav``;
+
+const Ul = styled.ul`
   display: inline-flex;
   align-items: center;
   gap: 3rem;
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 2.5rem;
   background: ${({ theme }) => theme.baseColor};
   border-radius: 1rem;
   box-shadow: ${({ theme }) => theme.boxShadow};
+  list-style: none;
 `;
 
 const Span = styled.span`

@@ -53,10 +53,12 @@ const ListItem = styled.li`
 
 const FormationType = styled.p`
   text-align: left;
+  font-size: 0.75rem;
 `;
 
 const FormationTitle = styled.h2`
   line-height: 120%;
+  font-size: 1.25rem;
   text-align: left;
 `;
 

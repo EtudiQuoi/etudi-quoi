@@ -73,7 +73,7 @@ const Grid = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15vh 1fr 15vh;
+  grid-template-rows: 20vh 1fr 15vh;
   grid-template-areas:
     "header"
     "results"
@@ -89,8 +89,9 @@ const GridItem = styled.div`
 const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0 3rem;
+  justify-content: center;
+  gap: 0.313rem;
+  padding: 0 1.875rem;
   height: 100%;
 `;
 
@@ -104,7 +105,7 @@ const HeaderH1 = styled.h1`
 `;
 
 const CardsList = styled.ul`
-  padding: 1rem 3rem;
+  padding: 1rem 1.875rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
