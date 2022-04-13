@@ -32,6 +32,7 @@ export const globalStyles = (
         min-height: 100%;
         font-family: "Epilogue", Helvetica, Arial, sans-serif;
         font-size: 16px;
+        height: -webkit-fill-available;
       }
     `}
   />

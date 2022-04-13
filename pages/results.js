@@ -113,10 +113,6 @@ const CardsList = styled.ul`
   height: 100px;
   min-height: 100%;
   max-height: 100%;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 const Separator = styled.hr`

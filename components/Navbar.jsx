@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <>
       <Container>
-        <EmptyDiv />
+        {/* <EmptyDiv /> */}
         <Nav>
           <Ul>
             <li>
@@ -46,7 +46,7 @@ export default function Navbar() {
             </li>
           </Ul>
         </Nav>
-        <SettingIcon onClick={openSetting} />
+        {/* <SettingIcon onClick={openSetting} /> */}
       </Container>
       {isOpenSetting && <Setting setIsOpenSetting={setIsOpenSetting} />}
     </>

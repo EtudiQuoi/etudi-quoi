@@ -1,11 +1,9 @@
 import styled from "@emotion/styled";
-import Link from "next/link";
 
-import Button from "./Button";
 import LinkTo from "../components/LinkTo";
 import ArrowLinkIcon from "../icons/ArrowLinkIcon";
 
-const CardResult = ({ type, title, percentage, rncp, disabled, className }) => {
+const CardResult = ({ type, title, percentage, rncp, className }) => {
   const rncpNumber = rncp?.slice(4);
   if (className === "tutorial") {
     return (
@@ -44,13 +42,9 @@ const CardResult = ({ type, title, percentage, rncp, disabled, className }) => {
           En savoir plus
           <ArrowLinkIcon />
         </LinkTo>
-        {disabled ? (
-          <Button size="small">Établissements</Button>
-        ) : (
-          <LinkTo link="/ecoles" className="secondary">
-            Établissements
-          </LinkTo>
-        )}
+        <LinkTo link="/ecoles" className="secondary">
+          Établissements
+        </LinkTo>
       </Buttons>
       {/* <BottomInfo>
                 <Label htmlFor="pertinence">Pertinence</Label>
