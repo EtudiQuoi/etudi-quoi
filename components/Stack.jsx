@@ -16,7 +16,7 @@ export const Stack = ({ onVote, children, ...props }) => {
         // update the stack
         let newStack = pop(stack);
         setStack(newStack);
-
+        
         // run function from onVote prop, passing the current item and value of vote
         onVote(item, vote);
     };

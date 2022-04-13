@@ -14,6 +14,7 @@ export const Card = ({ children, style, onVote, id, ...props }) => {
     const { setVoteFunction } = useVoteFunctionContext();
 
     const x = useMotionValue(0);
+    const y = useMotionValue(0);
     const controls = useAnimation();
 
     const [constrained, setConstrained] = useState(true);
@@ -21,7 +22,8 @@ export const Card = ({ children, style, onVote, id, ...props }) => {
     const getVote = (childNode, parentNode) => {
         const childRect = childNode.getBoundingClientRect();
         const parentRect = parentNode.getBoundingClientRect();
-        let result = parentRect.left >= childRect.right ? false : parentRect.right <= childRect.left ? true : undefined;
+        let result = parentRect.left >= childRect.right ? -1 : parentRect.right <= childRect.left ? 1 : undefined;
+        if (parentRect.top >= childRect.bottom) result = 0;
         return result;
     };
 
@@ -42,7 +44,17 @@ export const Card = ({ children, style, onVote, id, ...props }) => {
             return direction === "left" ? -parentWidth / 2 - childWidth / 2 : parentWidth / 2 + childWidth / 2;
         };
 
-        if (direction && Math.abs(velocity) > min) {
+        const flyAwayDistanceY = () => {
+            const parentHeight = cardElem.current.parentNode.getBoundingClientRect().height;
+            return -parentHeight * 2;
+        };
+
+        if (direction === "pass" && Math.abs(velocity) > min) {
+            setConstrained(false);
+            controls.start({
+                y: flyAwayDistanceY(),
+            });
+        } else if (direction && Math.abs(velocity) > min) {
             setConstrained(false);
             controls.start({
                 x: flyAwayDistance(direction),
@@ -69,16 +81,28 @@ export const Card = ({ children, style, onVote, id, ...props }) => {
             result !== undefined && onVote(result);
         });
 
-        return () => unsubscribeX();
+        const unsubscribeY = y.onChange(() => {
+            const childNode = cardElem.current;
+            const parentNode = cardElem.current.parentNode;
+            const result = getVote(childNode, parentNode);
+            result !== undefined && onVote(result);
+        });
+
+        const unsub = () => {
+            unsubscribeX();
+            unsubscribeY();
+        }
+
+        return () => unsub();
     });
 
     return (
         <StyledCard
             animate={controls}
             dragConstraints={constrained && { left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={{ left: 1, right: 1, top: 0.5, bottom: 0.5 }}
+            dragElastic={{ left: 1, right: 1, top: 1, bottom: 0.5 }}
             ref={cardElem}
-            style={{ x }}
+            style={{ x, y }}
             onDrag={getTrajectory}
             onDragEnd={() => flyAway(500)}
             whileTap={{ scale: 1.1 }}

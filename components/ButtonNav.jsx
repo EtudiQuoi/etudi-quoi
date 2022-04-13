@@ -10,7 +10,7 @@ export default function ButtonNav(props) {
     return (
         <ButtonContainer>
             <RoundButton title="Non" onClick={() => props.active && voteFunction && voteFunction("left")} layout="cross" />
-            <RoundButton layout="text" size="small">
+            <RoundButton onClick={() => props.active && voteFunction && voteFunction("pass")} layout="text" size="small">
                 Passer
             </RoundButton>
             <RoundButton title="Oui" onClick={() => props.active && voteFunction && voteFunction("right")} layout="check" />
