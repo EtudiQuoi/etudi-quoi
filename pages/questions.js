@@ -5,6 +5,11 @@ import { Container } from "../shared/styles";
 import VoteWrapper from "../lib/voteFunctionContext";
 import { useQuestionContext } from "../lib/questionContext";
 
+//Icon settings
+import Setting from "../components/Setting";
+import { useRouter } from "next/router";
+import SettingIcon from "../icons/SettingIcon";
+
 import Navbar from "../components/Navbar";
 import Range from "../components/Range";
 import Logo from "../components/Logo";
@@ -14,6 +19,12 @@ import ButtonNav from "../components/ButtonNav";
 const Home = () => {
     const { questions, formations, nextQuestion, questionCounter } = useQuestionContext();
     const [questionList, setQuestionList] = useState();
+    //Setting button function
+    const [isOpenSetting, setIsOpenSetting] = useState(false);
+    const router = useRouter();
+    const openSetting = () => {
+      setIsOpenSetting(true);
+    };
 
     useEffect(() => {
         if (!questions.length > 0) return;
@@ -23,11 +34,16 @@ const Home = () => {
     }, [questions]);
 
     return (
+      <>
         <Container>
             <VoteWrapper>
                 <Grid>
-                    <GridItem area="header">
+                    <GridItem area="header"  >
+                        <HeaderBox>
+                        <EmptyDiv />
                         <Logo />
+                        <SettingIcon onClick={openSetting} />
+                        </HeaderBox>
                     </GridItem>
                     <GridItem area="card">
                         {questionList?.length > 0 && (
@@ -56,10 +72,18 @@ const Home = () => {
                 </Grid>
             </VoteWrapper>
         </Container>
+      {isOpenSetting && <Setting setIsOpenSetting={setIsOpenSetting} />}
+
+      </>
     );
 };
 
 export default Home;
+
+const EmptyDiv = styled.div`
+  width: 30px;
+`;
+
 
 const Grid = styled.div`
     width: 100%;
@@ -74,7 +98,13 @@ const Grid = styled.div`
         "buttons"
         "navbar";
 `;
+const HeaderBox = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    align-items: center;
 
+`
 const GridItem = styled.div`
     grid-area: ${(props) => props.area};
     display: grid;
