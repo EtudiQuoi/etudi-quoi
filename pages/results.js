@@ -13,11 +13,8 @@ const Results = () => {
 
   useEffect(() => {
     if (!formations) return;
-    // const list = formations.map((formation) => {
-    //     return { score: formation.score || 0, name: formation.INTITULE, code: formation.ABREGE?.LIBELLE };
-    // });
-    // list.sort((a, b) => b.score - a.score);
     const list = [...formations];
+    list.sort((a, b) => b.score - a.score);
     list.length = 10;
     setFormationsList(list);
   }, [formations]);
@@ -44,6 +41,7 @@ const Results = () => {
                   <>
                     <CardResult
                       key={formation.formation_id}
+                      score={formation.score || 0}
                       type={formation.type}
                       title={formation.label}
                       percentage={0}
