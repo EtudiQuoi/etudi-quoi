@@ -66,6 +66,9 @@ const ListItem = styled.li`
   display: flex;
   flex-direction: column;
   gap: 1.563rem;
+  margin-bottom: 1.563rem;
+  padding-bottom: 1.563rem;
+  border-bottom: 1px solid grey;
   color: ${({ theme }) => theme.darkColor};
 
   &.tutorial-grey {
