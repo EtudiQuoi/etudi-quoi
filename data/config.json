@@ -417,30 +417,6 @@
       "category": []
     },
     {
-      "id": 34,
-      "Label": "Le secteur  de l'humanitaire t'en dis quoi ?",
-      "keywords": ["humanitaire", "bénévolat", "bénévole", "Aide"],
-      "nsf": [],
-      "strength": "1",
-      "category": []
-    },
-    {
-      "id": 35,
-      "Label": "Le secteur  des matériaux, de l'industrie t'en dis quoi ?",
-      "keywords": ["industrie", "matériaux", "production"],
-      "nsf": [],
-      "strength": "1",
-      "category": []
-    },
-    {
-      "id": 36,
-      "Label": "Le secteur  du secrétariat, de l'accueil t'en dis quoi ?",
-      "keywords": ["secrétariat", "Accueil", "secrétaire"],
-      "nsf": [],
-      "strength": "1",
-      "category": []
-    },
-    {
       "id": 37,
       "Label": "Le secteur  du transport, de la logistique t'en dis quoi ?",
       "keywords": ["transport", "Logistique", "conduite", "coordoner"],
@@ -616,6 +592,30 @@
       "nsf": [],
       "strength": "1",
       "category": ["interests"]
+    },
+    {
+      "id": 55,
+      "Label": "Le secteur  de l'humanitaire t'en dis quoi ?",
+      "keywords": ["humanitaire", "bénévolat", "bénévole", "Aide"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 56,
+      "Label": "Le secteur  des matériaux, de l'industrie t'en dis quoi ?",
+      "keywords": ["industrie", "matériaux", "production"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 57,
+      "Label": "Le secteur  du secrétariat, de l'accueil t'en dis quoi ?",
+      "keywords": ["secrétariat", "Accueil", "secrétaire"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
     }
   ]
 }
