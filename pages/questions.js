@@ -72,7 +72,9 @@ const Home = () => {
                                             category={element.category}
                                             whileTap={{ scale: 1.15 }}
                                         >
-                                            <ItemCategory category={element.category}>{getCategory(element)}</ItemCategory>
+                                            <ItemCategory category={element.category}>
+                                                {getCategory(element)}
+                                            </ItemCategory>
                                             <span>{element.question}</span>
                                         </Item>
                                     ))}
@@ -132,16 +134,17 @@ const Wrapper = styled(Stack)`
 `;
 
 const Item = styled.div`
+    position: relative;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 1fr 10%;
     place-items: center;
-    width: 200px;
-    height: 250px;
-    padding: 1rem;
+    width: calc(40vh * 0.8);
+    height: 40vh;
+    padding: 2rem;
+    box-shadow: ${({ theme }) => theme.boxShadow};
     font-size: 1.3rem;
     font-weight: 600;
-    box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: 8px;
     transform: ${() => {
         let rotation = Math.random() * (5 - -5) + -5;
@@ -152,27 +155,53 @@ const Item = styled.div`
         text-transform: capitalize;
     }
 
+    &:after {
+        content: "";
+        position: absolute;
+        top: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+        border-radius: 0.5rem;
+    }
+
     ${(props) => {
         switch (props.category) {
             case "interests":
                 return css`
                     color: #0c53a3;
                     background: #ffffff;
+
+                    &:after {
+                        border: 4px solid #0c53a3;
+                    }
                 `;
             case "character":
                 return css`
                     color: #ffffff;
                     background: linear-gradient(180deg, #84b9eb 0%, #63a3df 100%);
+
+                    &:after {
+                        border: 4px solid #ffffff;
+                    }
                 `;
             case "skills":
                 return css`
                     color: #ffffff;
                     background: linear-gradient(180deg, #0c53a3 0%, #0c3e77 100%);
+
+                    &:after {
+                        border: 4px solid #ffffff;
+                    }
                 `;
             default:
                 return css`
                     color: #0c53a3;
                     background: #ffffff;
+
+                    &:after {
+                        border: 4px solid #0c53a3;
+                    }
                 `;
         }
     }}
@@ -189,22 +218,22 @@ const ItemCategory = styled.div`
             case "interests":
                 return css`
                     color: #ffffff;
-                    background: #0C53A3;
+                    background: #0c53a3;
                 `;
             case "character":
                 return css`
-                    color: #0C53A3;
+                    color: #0c53a3;
                     background: #ffffff;
                 `;
             case "skills":
                 return css`
-                    color: #0C53A3;
+                    color: #0c53a3;
                     background: #ffffff;
                 `;
             default:
                 return css`
                     color: #ffffff;
-                    background: #0C53A3;
+                    background: #0c53a3;
                 `;
         }
     }}
