@@ -2,8 +2,8 @@ export default function ChartIcon(props) {
   if (props.active === true) {
     return (
       <svg
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         viewBox="0 0 46 45"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +29,8 @@ export default function ChartIcon(props) {
   } else {
     return (
       <svg
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         viewBox="0 0 48 47"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

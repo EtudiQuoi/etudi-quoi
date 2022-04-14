@@ -6,6 +6,7 @@ export const lightTheme = {
   primaryHover: "#84B9EB",
   secondary: "#84B9EB",
   accentColor: "#E94057",
+  accent: "#FC8E5E",
   accentColorHover: "#F6A0AC",
   darkColor: "#083262",
   darkShade: "#161C2E",

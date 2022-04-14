@@ -30,7 +30,7 @@ const Setting = ({ setIsOpenSetting }) => {
         <GridItem area="content">
           <ContentContainer>
             <SectionContent>
-              <H2>Résultats</H2>
+              <H2>Questions & Résultats</H2>
               <Content>
                 <P
                   css={css`
@@ -41,8 +41,19 @@ const Setting = ({ setIsOpenSetting }) => {
                   questionnaire et obtenir de nouvelles propositions de
                   formations.
                 </P>
-                <Button type="primary">Réinitialiser mes résultats</Button>
+                <Button type="accent">Réinitialiser mes résultats</Button>
               </Content>
+              {/* <Content>
+                <P
+                  css={css`
+                    margin-bottom: 1rem;
+                  `}
+                >
+                  Tu peux voir l’historique des réponses et les modifier à ta guise.
+Attention, cela peut avoir la conséquence de modifier nos précédentes suggestions.
+                </P>
+                <Button >Voir toutes mes réponses</Button>
+              </Content> */}
             </SectionContent>
             <SectionContent>
               <H2>Qui sommes-nous ?</H2>
@@ -91,6 +102,23 @@ const Setting = ({ setIsOpenSetting }) => {
             <Link href="/cgu">
               <A>Conditions générales d'utilisation</A>
            </Link>
+           <Link href="/code-source">
+             <A>Accéder au code source</A>
+           </Link>
+           <LinkFlexList>
+           <Link href="/instagram">
+             <A>Instagram</A>
+           </Link>
+           -
+           <Link href="/twitter">
+             <A> Twitter</A>
+           </Link>
+           -
+           <Link href="/tiktok">
+             <A> TikTok</A>
+           </Link>
+           </LinkFlexList>
+
           </LinksFooterBox>
           <LinksFooterBox>
             <Logo type="setting-icon" />
@@ -182,7 +210,9 @@ const Content = styled.div`
 
 const P = styled.p`
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5;
+
 `;
 const ImgBox = styled.div `
 width: 100%;
@@ -212,5 +242,11 @@ const LinksFooterBox = styled.div`
   color: ${blue};
 `
 
+const LinkFlexList = styled.div `
+  width:90%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
 
+`
 export default Setting;

@@ -27,13 +27,13 @@ const Schools = (props) => {
         <GridItem area="schools">
           <SchoolsList>
             <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
+            <SchoolCard>IUT Toulouse</SchoolCard>
+            <SchoolCard>IUT Laval</SchoolCard>
+            <SchoolCard>IUT Toulon</SchoolCard>
+            <SchoolCard>IUT Tours</SchoolCard>
+            <SchoolCard>IUT Marseille</SchoolCard>
+            <SchoolCard>IUT Tarbes</SchoolCard>
+            <SchoolCard>IUT Paris</SchoolCard>
           </SchoolsList>
         </GridItem>
         <GridItem area="navbar">
