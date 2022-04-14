@@ -2,140 +2,119 @@
   "questions": [
     {
       "id": 0,
-      "label": "As-tu un bon sens du relationnel ?",
+      "Label": "As-tu un bon sens du relationnel ?",
       "keywords": [
         "travail d'équipe",
         "travail en équipe",
         "coopération",
         "commerce"
       ],
-      "nsf": [
-        "335p",
-        "335t",
-        "335w",
-        "310p",
-        "312p",
-        "312t",
-        "312v",
-        "315",
-        "320",
-        "332",
-        "41",
-        "222r",
-        "230w",
-        "252w",
-        "325",
-        "336t",
-        "336",
-        "323t",
-        "324t",
-        "211w",
-        "334",
-        "314r",
-        "315p",
-        "310",
-        "313",
-        "252r"
-      ],
+      "nsf": ["120g", "315t", "320n", "320p", "313", "313z"],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 1,
-      "label": "Es-tu à l'aise avec les enfants ?",
-      "keywords": ["enfants", "enfant", "education"],
-      "nsf": ["335t", "335w"],
+      "Label": "Es-tu à l'aise autour d'enfants ?",
+      "keywords": ["enfants", "enfant", "education", "Animation", "Animateur"],
+      "nsf": ["335", "335t", "335w"],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 2,
-      "label": "Les nouvelles technologies t'interressent ?",
+      "Label": "Les nouvelles technologies, t'interressent-elles ?",
       "keywords": [
         "technologies",
         "numérique",
         "informatique",
+        "sciences",
         "technologique"
       ],
-      "nsf": [],
+      "nsf": ["110", "110f"],
       "strength": "1",
-      "type": []
+      "category": ["interests"]
     },
     {
       "id": 3,
-      "label": "Aimerais tu avoir des responsabilités ?",
-      "keywords": ["diriger", "coordonner"],
-      "nsf": [],
+      "Label": "Sais-tu gérer des responsabilités ?",
+      "keywords": ["diriger", "coordonner", "Lead", "manager"],
+      "nsf": ["230p", "346p", "332p", "335p", "346p"],
       "strength": "1",
-      "type": []
+      "category": ["skills"]
     },
     {
       "id": 4,
-      "label": "Aimes-tu travailler en groupes ?",
-      "keywords": ["travail d'équipe", "travail en équipe", "coopération"],
+      "Label": "Aimes-tu travailler en groupe ?",
+      "keywords": [
+        "travail d'équipe",
+        "travail en équipe",
+        "coopération",
+        "travaux de groupes"
+      ],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 5,
-      "label": "Les cours théoriques t'ennuient-ils ?",
+      "Label": "Les cours théoriques t'ennuient-ils ?",
       "keywords": ["magistraux", "théories"],
       "nsf": [],
       "strength": "-1",
-      "type": ["licence", "master"]
+      "category": ["character"]
     },
     {
       "id": 6,
-      "label": "Tu aimes surtout les TP, les projets et la pratique",
+      "Label": "Tu aimes surtout les TP, les projets et la pratique ?",
       "keywords": ["pratique", "TP", "projets"],
       "nsf": [],
       "strength": "1",
-      "type": ["BUT", "CAP", "BTS", "BEP"]
+      "category": ["character"]
     },
     {
       "id": 7,
-      "label": "Aimes-tu travailler seul ?",
-      "keywords": ["autonomie", "indépendance", "autodidacte"],
+      "Label": "Aimes-tu travailler seul ?",
+      "keywords": ["Autonomie", "indépendance", "Autodidacte", "freelance"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 8,
-      "label": "As-tu besoin d'être accompagné dans ton travail ?",
-      "keywords": ["autonomie", "indépendance", "autodidacte"],
+      "Label": "As-tu besoin d'être accompagné dans ton travail ?",
+      "keywords": ["Autonomie", "indépendance", "Autodidacte"],
       "nsf": [],
       "strength": "-1",
-      "type": []
+      "category": ["skills"]
     },
     {
       "id": 9,
-      "label": "Arrives-tu à rester serein lors des situations stressantes ?",
+      "Label": "As-tu des facilités à prendre le lead dans un groupe ?",
       "keywords": ["diriger", "coordonner", "responsabilité"],
-      "nsf": [],
+      "nsf": ["322p", "335p", "230p", "346p"],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 10,
-      "label": "Lors d'un changement de situation, met-tu beaucoup de temps à t'adapter ?",
-      "keywords": ["polyvalent", "polyvalence", "adaptation"],
+      "Label": "Lors d'un changement de situation, met-tu beaucoup de temps à t'adapter ?",
+      "keywords": ["polyvalent", "polyvalence", "Adaptation"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 11,
-      "label": "Pendant un travail de groupe, prend tu souvent des initiatives ?",
-      "keywords": ["autonomie", "indépendance", "initiative"],
+      "Label": "Pendant un travail de groupe, prend tu souvent des initiatives ?",
+      "keywords": ["Autonomie", "indépendance", "initiative"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 12,
-      "label": "As-tu envie de mettre ta créativité à profit dans tes études ?",
+      "Label": "As-tu envie de mettre ta créativité à profit dans tes études ?",
       "keywords": [
         "créatif",
         "créativité",
@@ -146,36 +125,79 @@
       ],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 13,
-      "label": "Es-tu rigoureux dans ton travail ?",
-      "keywords": ["rigueur", "rigoureu", "rigoureux", "appliqué"],
+      "Label": "Es-tu rigoureux dans ton travail ?",
+      "keywords": ["rigueur", "rigoureu", "rigoureux", "Appliqué", "sérieux"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["character"]
     },
     {
       "id": 14,
-      "label": "Est ce que tu aimes organiser et ordonner les choses ?",
+      "Label": "Est ce que tu aimes organiser et ordonner les choses ?",
       "keywords": ["diriger", "coordonner", "gestion de projet", "organiser"],
-      "nsf": ["311p", "310", "314", "315", "320p", "322p", "323p"],
+      "nsf": [
+        "311p",
+        "310",
+        "314",
+        "315",
+        "320p",
+        "322p",
+        "323p",
+        "210p",
+        "211p",
+        "212p",
+        "220p",
+        "222p",
+        "225p",
+        "240p",
+        "241p",
+        "242p",
+        "243p",
+        "250m",
+        "250p",
+        "251p",
+        "252p",
+        "255p",
+        "310p",
+        "313p",
+        "314p",
+        "315p",
+        "315r",
+        "320p",
+        "321p",
+        "322p",
+        "323p",
+        "324p",
+        "326p",
+        "330p",
+        "331p",
+        "333p",
+        "340p",
+        "343p",
+        "344p",
+        "346p",
+        "414",
+        "414z"
+      ],
       "strength": "1",
-      "type": []
+      "category": ["skills"]
     },
     {
       "id": 15,
-      "label": "Une formation dans l'aménagement des espaces verts t'en penses quoi ?",
+      "Label": "Est-ce que tu as la main verte ?",
       "keywords": ["vert", "nature", "environnement", "nature"],
       "nsf": ["214"],
       "strength": "1",
-      "type": []
+      "category": ["skills"]
     },
     {
       "id": 16,
-      "label": "une formation dans l'artisanat d'art, le design t'en penses quoi ?",
-      "keywords": ["art", "artisanat", "design", "artistique"],
+      "Label": "Est-ce que tu aimes l'art, le design... ?",
+      "keywords": ["Art", "Artisanat", "design", "Artistique"],
       "nsf": [
         "132f",
         "134f",
@@ -192,75 +214,100 @@
         "342v"
       ],
       "strength": "1",
-      "type": []
+      "category": ["interests"]
     },
     {
       "id": 17,
-      "label": "une formation dans la biologie, la chimie t'en penses quoi ?",
+      "Label": "Est-ce que la chimie, la biologie ça t'intéresse ?",
       "keywords": ["chimie", "biologie", "science", "SVT", "nature"],
       "nsf": ["112", "113", "118", "111", "114c", "116", "136f"],
       "strength": "1",
-      "type": []
+      "category": ["interests"]
     },
     {
       "id": 18,
-      "label": "une formation dans le commerce t'en penses quoi ?",
-      "keywords": ["commerce", "communication"],
+      "Label": "As-tu des compétences relationnelles ?",
+      "keywords": ["commerce", "communication", "relationnel"],
       "nsf": ["136g", "312"],
       "strength": "1",
-      "type": []
+      "category": ["skills"]
     },
     {
       "id": 19,
-      "label": "une formation dans l'immobilier t'en penses quoi ?",
-      "keywords": ["immobilier", "vente", "commerce"],
-      "nsf": [],
+      "Label": "As-tu des facilités avec l'apprentissage des langues ?",
+      "keywords": ["commerce", "communication", "Langues", "Linguistique"],
+      "nsf": ["136g", "312"],
       "strength": "1",
-      "type": []
+      "category": ["skills"]
     },
     {
       "id": 20,
-      "label": "une formation dans la communication, le journalisme, le marketing t'en penses quoi ?",
+      "Label": "Est-ce que tu sais bien négocier ?",
       "keywords": [
-        "communication",
-        "journalisme",
-        "journaliste",
+        "immobilier",
         "vente",
-        "marketing",
-        "pub",
-        "publicité"
+        "commerce",
+        "economie",
+        "banque",
+        "assurance",
+        "negocier",
+        "negociation"
       ],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["skills"]
     },
     {
       "id": 21,
-      "label": "une formation dans le graphisme t'en penses quoi ?",
-      "keywords": ["design", "graphisme", "création", "visuel", "art", "creer"],
+      "Label": "Est-ce que tu aimes le journalisme ?",
+      "keywords": ["communication", "journalisme", "journaliste"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": ["interests"]
     },
     {
       "id": 22,
-      "label": "une formation dans le droit, la justice t'en penses quoi ?",
-      "keywords": ["droit", "justice", "avocat", "juge", "code"],
+      "Label": "Est-ce que tu aimes faire des recherches et te documenter ?",
+      "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 23,
-      "label": "une formation dans l'enseignement, la formation, l'insertion t'en penses quoi ?",
-      "keywords": ["enseignement", "insertion", "orientation"],
+      "Label": "Est-ce que tu as une bonne capacité d'apprentissage ?",
+      "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 24,
-      "label": "une formation dans l'hôtellerie, la restauration, le tourisme t'en penses quoi ?",
+      "Label": "Est-ce que tu aimes chercher et trouver des solutions par toi même ?",
+      "keywords": ["droit", "justice", "Avocat", "juge", "code"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 25,
+      "Label": "Est-ce que tu as une bonne capacité d'analyse et de reflexion ?",
+      "keywords": ["droit", "justice", "Avocat", "juge", "code"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 26,
+      "Label": "Une formation dans l'enseignement, la formation, l'insertion t'en penses quoi ?",
+      "keywords": ["enseignement", "insertion", "orientation"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 27,
+      "Label": "Une formation dans l'hôtellerie, la restauration, le tourisme t'en penses quoi ?",
       "keywords": [
         "hôtellerie",
         "service",
@@ -271,27 +318,27 @@
       ],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
-      "id": 25,
-      "label": "une formation dans la mécanique, l'automobile t'en penses quoi ?",
-      "keywords": ["mécanique", "automobile", "garage"],
+      "id": 28,
+      "Label": "Une formation dans la mécanique, l'automobile t'en penses quoi ?",
+      "keywords": ["mécanique", "Automobile", "garage"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
-      "id": 26,
-      "label": "une formation dans la santé, le paramédical t'en penses quoi ?",
+      "id": 29,
+      "Label": "Une formation dans la santé, le paramédical t'en penses quoi ?",
       "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
-      "id": 27,
-      "label": "une formation dans les soins, l'esthétique, la coiffure t'en penses quoi ?",
+      "id": 30,
+      "Label": "Une formation dans les soins, l'esthétique, la coiffure t'en penses quoi ?",
       "keywords": [
         "soins",
         "soin",
@@ -302,48 +349,48 @@
       ],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 28,
-      "label": "le secteur  de l'alimentation, l'agroalimentaire t'en dis quoi ?",
+      "Label": "Le secteur  de l'alimentation, l'agroalimentaire t'en dis quoi ?",
       "keywords": [
-        "alimentation",
-        "alimentaire",
-        "agroalimentaire",
+        "Alimentation",
+        "Alimentaire",
+        "Agroalimentaire",
         "nourriture"
       ],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 29,
-      "label": "le secteur  de la banque, la finance, l'assurance t'en dis quoi ?",
-      "keywords": ["banque", "finance", "assurance", "economie"],
+      "Label": "Le secteur  de la banque, la finance, l'assurance t'en dis quoi ?",
+      "keywords": ["banque", "finance", "Assurance", "economie"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 30,
-      "label": "le secteur  du btp, de l'urbanisme t'en dis quoi ?",
-      "keywords": ["btp", "urbanisme", "urbain", "travaux"],
+      "Label": "Le secteur  du btp, de l'urbanisme t'en dis quoi ?",
+      "keywords": ["btp", "Urbanisme", "Urbain", "travaux"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 31,
-      "label": "le secteur  de l'énergie t'en dis quoi ?",
+      "Label": "Le secteur  de l'énergie t'en dis quoi ?",
       "keywords": ["energie", "environnement"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 32,
-      "label": "le secteur  de l'environnement, les déchets, la propreté t'en dis quoi ?",
+      "Label": "Le secteur  de l'environnement, les déchets, la propreté t'en dis quoi ?",
       "keywords": [
         "environnement",
         "nature",
@@ -353,122 +400,122 @@
       ],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 33,
-      "label": "le secteur  de la gestion, la comptabilité, les rh t'en dis quoi ?",
+      "Label": "Le secteur  de la gestion, la comptabilité, les rh t'en dis quoi ?",
       "keywords": ["gestion", "comptabilité", "rh", "diriger", "direction"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 34,
-      "label": "le secteur  de l'humanitaire t'en dis quoi ?",
-      "keywords": ["humanitaire", "bénévolat", "bénévole", "aide"],
+      "Label": "Le secteur  de l'humanitaire t'en dis quoi ?",
+      "keywords": ["humanitaire", "bénévolat", "bénévole", "Aide"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 35,
-      "label": "le secteur  des matériaux, de l'industrie t'en dis quoi ?",
+      "Label": "Le secteur  des matériaux, de l'industrie t'en dis quoi ?",
       "keywords": ["industrie", "matériaux", "production"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 36,
-      "label": "le secteur  du secrétariat, de l'accueil t'en dis quoi ?",
-      "keywords": ["secrétariat", "accueil", "secrétaire"],
+      "Label": "Le secteur  du secrétariat, de l'accueil t'en dis quoi ?",
+      "keywords": ["secrétariat", "Accueil", "secrétaire"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 37,
-      "label": "le secteur  du transport, de la logistique t'en dis quoi ?",
-      "keywords": ["transport", "logistique", "conduite", "coordoner"],
+      "Label": "Le secteur  du transport, de la logistique t'en dis quoi ?",
+      "keywords": ["transport", "Logistique", "conduite", "coordoner"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 38,
-      "label": "aimes-tu les animaux  ?",
-      "keywords": ["animaux", "animal"],
+      "Label": "Aimes-tu les animaux  ?",
+      "keywords": ["Animaux", "Animal"],
       "nsf": [],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 39,
-      "label": "aimes-tu le cinéma, l'audiovisuel ou le jeux vidéo  ?",
+      "Label": "Aimes-tu le cinéma, l'audiovisuel ou le jeux vidéo  ?",
       "keywords": [
         "cinéma",
-        "audiovisuel",
+        "Audiovisuel",
         "jeux vidéo",
-        "art",
+        "Art",
         "visuel",
         "numérique"
       ],
       "nsf": ["132g", "321v", "323"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 40,
-      "label": "aimes-tu les livres, l'édition, l'imprimerie  ?",
-      "keywords": ["livre", "édition", "imprimerie", "littéraire", "libraire"],
+      "Label": "Aimes-tu les livres, l'édition, l'imprimerie  ?",
+      "keywords": ["Livre", "édition", "imprimerie", "Littéraire", "Libraire"],
       "nsf": ["322", "131"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 41,
-      "label": "aimes-tu la physique, les maths  ?",
+      "Label": "Aimes-tu la physique, les maths  ?",
       "keywords": ["physique", "math", "science", "calcul"],
       "nsf": ["11"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 42,
-      "label": "aimes-tu le sport, l'animation  ?",
-      "keywords": ["sport", "animation"],
+      "Label": "Aimes-tu le sport, l'animation  ?",
+      "keywords": ["sport", "Animation"],
       "nsf": ["335w", "335t"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 43,
-      "label": "as-tu un attrait pour l'architecture, la décoration  ?",
-      "keywords": ["décoration", "design", "architecture"],
+      "Label": "As-tu un attrait pour l'architecture, la décoration  ?",
+      "keywords": ["décoration", "design", "Architecture"],
       "nsf": ["230n", "233", "234v"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 44,
-      "label": "as-tu un attrait pour le design, la mode  ?",
+      "Label": "As-tu un attrait pour le design, la mode  ?",
       "keywords": ["design", "mode", "couture"],
       "nsf": ["242", "243", "132f"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 45,
-      "label": "as-tu un attrait pour la culture, le spectacle, le patrimoine  ?",
+      "Label": "As-tu un attrait pour la culture, le spectacle, le patrimoine  ?",
       "keywords": ["culture", "spectacle", "patrimoine", "musée", "exposition"],
       "nsf": ["342"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 46,
-      "label": "as-tu un attrait pour l'éléctricité, l'éléctronique, la robotique  ?",
+      "Label": "As-tu un attrait pour l'éléctricité, l'éléctronique, la robotique  ?",
       "keywords": [
         "éléctronique",
         "technologie",
@@ -478,31 +525,91 @@
       ],
       "nsf": ["255"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 47,
-      "label": "as-tu un attrait pour l'informatique, le web, les réseaux  ?",
+      "Label": "As-tu un attrait pour l'informatique, le web, les réseaux  ?",
       "keywords": ["informatique", "web", "réseau", "technologie", "internet"],
       "nsf": ["326"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 48,
-      "label": "as-tu un attrait pour les lettres, les sciences humaines, les langues  ?",
-      "keywords": ["langues", "sciences humaines", "lettre", "écriture"],
+      "Label": "As-tu un attrait pour les lettres, les sciences humaines, les langues  ?",
+      "keywords": ["Langues", "sciences humaines", "Lettre", "écriture"],
       "nsf": ["120 ", "131", "136", "125"],
       "strength": "1",
-      "type": []
+      "category": []
     },
     {
       "id": 49,
-      "label": "as-tu un attrait pour le social, la petite enfance, les services à la personne  ?",
+      "Label": "As-tu un attrait pour le social, la petite enfance, les services à la personne  ?",
       "keywords": ["social", "enfant", "enfance", "service à la personne"],
       "nsf": ["332 ", "330", "335", "421 "],
       "strength": "1",
-      "type": []
+      "category": []
+    },
+    {
+      "id": 50,
+      "Label": "Une formation dans le graphisme t'en penses quoi ?",
+      "keywords": ["design", "graphisme", "création", "visuel", "Art", "creer"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 51,
+      "Label": "Est-ce que tu aimes tout redécorer chez toi ?",
+      "keywords": ["Architecture", "intérieur", "design", "décoration", "Art"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 52,
+      "Label": "Est-ce que tu visites régulierement des musées ?",
+      "keywords": [
+        "Art",
+        "histoire",
+        "historien",
+        "peinture",
+        "peintre",
+        "musée"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 53,
+      "Label": "Est-ce que l'histoire du monde te fascine ?",
+      "keywords": [
+        "histoire",
+        "historien",
+        "science",
+        "Archéologie",
+        "Archélogique"
+      ],
+      "nsf": ["126", "126f"],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 54,
+      "Label": "Est-ce que l'espace est un centre d'intérêt ?",
+      "keywords": [
+        "espace",
+        "science",
+        "spacial",
+        "Astronome",
+        "Astronomie",
+        "physique"
+      ],
+      "nsf": [],
+      "strength": "1",
+      "category": []
     }
   ]
 }
