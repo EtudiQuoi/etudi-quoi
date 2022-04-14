@@ -50,7 +50,7 @@ const H1 = styled.h1`
 
 const H3 = styled.h3`
   font-weight: bold;
-  color: ${({ theme }) => theme.primaryHover};
+  color: ${({ theme }) => theme.accent};
 
   span {
     color: ${({ theme }) => theme.primary};
