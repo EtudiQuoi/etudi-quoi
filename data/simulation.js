@@ -44,7 +44,7 @@ questionData.questions.forEach((element) => {
         return formation.ID_FICHE;
     });
 
-    json.questions.push({ question_id: element.id, question: element.label, formations: formationIdArray });
+    json.questions.push({ question_id: element.id, question: element.label, category: element.category, formations: formationIdArray });
 });
 
 fs.writeFile(`${__dirname}/../public/simulation.json`, JSON.stringify(json, null, 4), "utf8", function (err) {

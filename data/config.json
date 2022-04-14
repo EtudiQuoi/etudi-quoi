@@ -11,7 +11,7 @@
       ],
       "nsf": ["120g", "315t", "320n", "320p", "313", "313z"],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 1,
@@ -19,7 +19,7 @@
       "keywords": ["enfants", "enfant", "education", "Animation", "Animateur"],
       "nsf": ["335", "335t", "335w"],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 2,
@@ -33,7 +33,7 @@
       ],
       "nsf": ["110", "110f"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 3,
@@ -41,7 +41,7 @@
       "keywords": ["diriger", "coordonner", "Lead", "manager"],
       "nsf": ["230p", "346p", "332p", "335p", "346p"],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 4,
@@ -54,7 +54,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 5,
@@ -62,7 +62,7 @@
       "keywords": ["magistraux", "théories"],
       "nsf": [],
       "strength": "-1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "keywords": ["pratique", "TP", "projets"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 7,
@@ -78,7 +78,7 @@
       "keywords": ["Autonomie", "indépendance", "Autodidacte", "freelance"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
       "keywords": ["Autonomie", "indépendance", "Autodidacte"],
       "nsf": [],
       "strength": "-1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 9,
@@ -94,7 +94,7 @@
       "keywords": ["diriger", "coordonner", "responsabilité"],
       "nsf": ["322p", "335p", "230p", "346p"],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 10,
@@ -102,7 +102,7 @@
       "keywords": ["polyvalent", "polyvalence", "Adaptation"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 11,
@@ -110,7 +110,7 @@
       "keywords": ["Autonomie", "indépendance", "initiative"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 12,
@@ -125,7 +125,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 13,
@@ -133,7 +133,7 @@
       "keywords": ["rigueur", "rigoureu", "rigoureux", "Appliqué", "sérieux"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 14,
@@ -184,7 +184,7 @@
         "414z"
       ],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 15,
@@ -192,7 +192,7 @@
       "keywords": ["vert", "nature", "environnement", "nature"],
       "nsf": ["214"],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 16,
@@ -214,7 +214,7 @@
         "342v"
       ],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 17,
@@ -222,7 +222,7 @@
       "keywords": ["chimie", "biologie", "science", "SVT", "nature"],
       "nsf": ["112", "113", "118", "111", "114c", "116", "136f"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 18,
@@ -230,7 +230,7 @@
       "keywords": ["commerce", "communication", "relationnel"],
       "nsf": ["136g", "312"],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 19,
@@ -238,7 +238,7 @@
       "keywords": ["commerce", "communication", "Langues", "Linguistique"],
       "nsf": ["136g", "312"],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 20,
@@ -255,7 +255,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 21,
@@ -263,7 +263,7 @@
       "keywords": ["communication", "journalisme", "journaliste"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 22,
@@ -271,7 +271,7 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 23,
@@ -279,7 +279,7 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 24,
@@ -287,7 +287,7 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 25,
@@ -295,7 +295,7 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": ["skills"]
+      "category": "skills"
     },
     {
       "id": 26,
@@ -310,7 +310,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 27,
@@ -318,7 +318,7 @@
       "keywords": ["mécanique", "Automobile", "garage"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 28,
@@ -326,7 +326,7 @@
       "keywords": ["mécanique", "Automobile", "garage"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 29,
@@ -334,7 +334,7 @@
       "keywords": ["mécanique", "aviation", "avion", "pilote", "piloter"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 30,
@@ -342,7 +342,7 @@
       "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 31,
@@ -350,7 +350,7 @@
       "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 32,
@@ -365,7 +365,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 33,
@@ -382,7 +382,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 34,
@@ -390,7 +390,7 @@
       "keywords": ["btp", "Urbanisme", "Urbain", "travaux"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 35,
@@ -406,7 +406,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 36,
@@ -430,7 +430,7 @@
       "keywords": ["Animaux", "Animal"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 39,
@@ -445,7 +445,7 @@
       ],
       "nsf": ["132g", "321v", "323"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 40,
@@ -453,7 +453,7 @@
       "keywords": ["Livre", "édition", "imprimerie", "Littéraire", "Libraire"],
       "nsf": ["322", "131"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 41,
@@ -461,7 +461,7 @@
       "keywords": ["physique", "math", "science", "calcul"],
       "nsf": ["11"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 42,
@@ -469,7 +469,7 @@
       "keywords": ["sport"],
       "nsf": ["335w", "335t"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 43,
@@ -477,7 +477,7 @@
       "keywords": ["décoration", "design", "Architecture"],
       "nsf": ["230n", "233", "234v"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 44,
@@ -485,7 +485,7 @@
       "keywords": ["design", "mode", "couture"],
       "nsf": ["242", "243", "132f"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 45,
@@ -493,7 +493,7 @@
       "keywords": ["culture", "spectacle", "patrimoine", "musée", "exposition"],
       "nsf": ["342"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 46,
@@ -507,7 +507,7 @@
       ],
       "nsf": ["255"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 47,
@@ -515,7 +515,7 @@
       "keywords": ["informatique", "web", "réseau", "technologie", "internet"],
       "nsf": ["326"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 48,
@@ -523,7 +523,7 @@
       "keywords": ["Langues", "sciences humaines", "Lettre", "écriture"],
       "nsf": ["120 ", "131", "136", "125"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 49,
@@ -531,7 +531,7 @@
       "keywords": ["social", "enfant", "enfance", "service à la personne"],
       "nsf": ["332 ", "330", "335", "421 "],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 50,
@@ -539,7 +539,7 @@
       "keywords": ["design", "graphisme", "création", "visuel", "Art", "creer"],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 51,
@@ -547,7 +547,7 @@
       "keywords": ["Architecture", "intérieur", "design", "décoration", "Art"],
       "nsf": [],
       "strength": "1",
-      "category": ["character"]
+      "category": "character"
     },
     {
       "id": 52,
@@ -562,7 +562,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 53,
@@ -576,7 +576,7 @@
       ],
       "nsf": ["126", "126f"],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 54,
@@ -591,7 +591,7 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": ["interests"]
+      "category": "interests"
     },
     {
       "id": 55,
