@@ -27,8 +27,8 @@ export default function ButtonNav(props) {
 }
 
 const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.344rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 `;

@@ -32,6 +32,7 @@ formationData.FICHES.forEach((element) => {
     json.formations.push({
         formation_id: element?.ID_FICHE,
         rncp: element?.NUMERO_FICHE,
+        level: element?.NOMENCLATURE_EUROPE?.NIVEAU,
         label: element?.INTITULE,
         type: element?.ABREGE?.LIBELLE || element?.ABREGE?.CODE || null,
     });
