@@ -27,15 +27,8 @@ export default function ButtonNav(props) {
 }
 
 const ButtonContainer = styled.div`
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.344rem;
->>>>>>> 60b58d231f3f834d72ce124864c9e786819a2f86
 `;
