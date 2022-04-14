@@ -6,7 +6,7 @@ Test the app here : https://etudiquoi.com/
 
 ## Contribuer au projet
 
-[Tutoriel](TUTO.md)
+Retrouvez [ici](TUTO.md) comment participer à améliorer le projet.
 
 
 ## Copyrights ©
