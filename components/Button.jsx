@@ -59,6 +59,11 @@ const Btn = styled.button`
         background: transparent;
         border: 2px solid ${props.theme.primary};
       `;
+    } else if (props.type === "accent") {
+      return css`
+        color: ${props.theme.baseColor};
+        background-color: ${props.theme.accent};
+      `;
     } else {
       return css`
         color: ${props.theme.primary};

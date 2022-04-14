@@ -17,35 +17,46 @@ export default function Navbar() {
     setIsOpenSetting(true);
   };
 
+  // function getCurrentUrl() {
+  //   return window.location.href
+
+  // }
+  // const currentUrl = getCurrentUrl()
+
+  // console.log (currentUrl);
+  const currentPath = router.pathname;
+  console.log (currentPath);
+
   return (
     <>
+
       <Container>
         {/* <EmptyDiv /> */}
-        <Nav>
+
           <Ul>
-            <li>
-              <Link href="/questions">
+            <NavLI style={{ backgroundColor: currentPath === '/questions' ? '#0C53A3' : 'transparent' }}>
+            <Link href="/questions">
                 <A title="Questions">
                   <CardIcon active={router.pathname === "/questions"} />
-                  <Span>Cartes</Span>
+                  <Span style={{ color: currentPath === '/questions' ? '#fff' : '0C53A3' }}>Cartes</Span>
                 </A>
               </Link>
-            </li>
-            <li>
+            </NavLI>
+            <NavLI style={{ backgroundColor: currentPath === '/results' ? '#0C53A3' : 'transparent' }}>
               <Link href="/results">
                 <A title="Résultats">
-                  <ChartIcon
+                  <ChartIcon style={{with:"4px"}}
                     active={
                       router.pathname === "/results" ||
                       router.pathname === "/ecoles"
                     }
                   />
-                  <Span>Résultats</Span>
+                  <Span style={{ color: currentPath === '/results' ? '#fff' : '0C53A3' }}>Résultats</Span>
                 </A>
               </Link>
-            </li>
+            </NavLI>
           </Ul>
-        </Nav>
+
         {/* <SettingIcon onClick={openSetting} /> */}
       </Container>
       {isOpenSetting && <Setting setIsOpenSetting={setIsOpenSetting} />}
@@ -64,21 +75,30 @@ const EmptyDiv = styled.div`
   width: 30px;
 `;
 
-const Nav = styled.nav``;
 
 const Ul = styled.ul`
+width: 14.125rem;
+height: 4.313rem;
   display: inline-flex;
-  align-items: center;
-  gap: 3rem;
-  padding: 0.5rem 2.5rem;
+  padding: 0;
   background: ${({ theme }) => theme.baseColor};
   border-radius: 1rem;
   box-shadow: ${({ theme }) => theme.boxShadow};
   list-style: none;
+
 `;
+const NavLI = styled.li `
+width: 50%;
+border-radius:1rem;
+margin: 0;
+padding: 0.5rem 0;
+`
+
 
 const Span = styled.span`
   color: ${({ theme }) => theme.primary};
+  font-size: 0.688rem;
+
 `;
 
 const A = styled.a`
@@ -95,6 +115,9 @@ const SettingIconContainer = styled.div`
   // top: 50%;
   // transform: translateY(-50%);
 `;
+
+
+
 
 // const NavItem = styled(Link)`
 //     cursor: pointer;
