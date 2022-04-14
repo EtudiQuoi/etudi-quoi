@@ -1,28 +1,33 @@
 import styled from "@emotion/styled";
 import { Container } from "../shared/styles";
 import Logo from "../components/Logo";
-import Button from "../components/Button";
-import Link from "next/link";
+import LinkTo from "../components/LinkTo";
 
 const Menu = () => {
   return (
     <Container>
       <Grid>
-        <GridItem area="title" gap="3">
+        <GridItem area="title" gap="1.688">
           <Logo size="big" />
           <H2>Trouve la formation qui matche tes envies.</H2>
         </GridItem>
-        <GridItem area="buttons" gap="2">
-          <Link href="/questions">
+        <GridItem area="buttons" gap="1.688">
+          {/* <Link href="/questions">
             <a>
-              <Button>C'est parti</Button>
+              <Button type="primary">C'est parti</Button>
             </a>
-          </Link>
-          <Link href="/tutorial">
+          </Link> */}
+          <LinkTo link="/questions" className="primary big">
+            C'est parti
+          </LinkTo>
+          {/* <Link href="/tutorial">
             <a>
               <Button>Comment ça marche ?</Button>
             </a>
-          </Link>
+          </Link> */}
+          <LinkTo link="/tutorial" className="secondary big">
+            Comment ça marche ?
+          </LinkTo>
         </GridItem>
       </Grid>
     </Container>

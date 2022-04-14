@@ -5,6 +5,7 @@ import { css } from "@emotion/react";
 
 import TutoSlide from "../components/TutoSlide";
 import Button from "../components/Button";
+import LinkTo from "./LinkTo";
 
 const TutorialContent = () => {
   const [slideNumber, setSlideNumber] = useState(1);
@@ -33,7 +34,7 @@ const TutorialContent = () => {
   const dragChangeSlide = () => {
     if (
       touchStart > touchEnd &&
-      slideNumber < 3 &&
+      slideNumber < 4 &&
       touchStart !== 0 &&
       touchEnd !== 0
     ) {
@@ -68,11 +69,14 @@ const TutorialContent = () => {
           {slideNumber === 1
             ? "Swipe les propositions qui te caractérisent"
             : slideNumber === 2
+            ? "Tu peux swiper :"
+            : slideNumber === 3
             ? "Découvre les formations qui te correspondent"
             : "Trouve les établissements qui proposent la formation"}
         </H2>
       </GridItem>
       <GridItem
+        area="slider"
         onTouchStart={(e) => setTouchStart(e.changedTouches[0].clientX)}
         onTouchEnd={(e) => setTouchEnd(e.changedTouches[0].clientX)}
       >
@@ -83,15 +87,14 @@ const TutorialContent = () => {
           <Bullet active={slideNumber === 1} onClick={() => onClickBullet(1)} />
           <Bullet active={slideNumber === 2} onClick={() => onClickBullet(2)} />
           <Bullet active={slideNumber === 3} onClick={() => onClickBullet(3)} />
+          <Bullet active={slideNumber === 4} onClick={() => onClickBullet(4)} />
         </Bullets>
-        {slideNumber < 3 ? (
+        {slideNumber < 4 ? (
           <Button onClick={onClickNextButton}>Suivant</Button>
         ) : (
-          <Link href={"/questions"}>
-            <a>
-              <Button>Lancer</Button>
-            </a>
-          </Link>
+          <LinkTo link="/questions" className="primary big">
+            Lancer
+          </LinkTo>
         )}
       </GridItem>
     </>
@@ -100,7 +103,8 @@ const TutorialContent = () => {
 
 const H2 = styled.h2`
   font-size: 1.5rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  color: ${({ theme }) => theme.darkColor};
 `;
 
 const GridItem = styled.div`
