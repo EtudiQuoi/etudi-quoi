@@ -24,7 +24,7 @@ export default function Logo(props) {
 
 const H1 = styled.h1`
   font-weight: bold;
-  color: ${({ theme }) => theme.accentColor};
+  color: ${({ theme }) => theme.accent};
 
   a {
     color: inherit;
