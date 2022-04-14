@@ -318,7 +318,7 @@
       "keywords": ["mécanique", "Automobile", "garage"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
       "id": 28,
@@ -326,7 +326,7 @@
       "keywords": ["mécanique", "Automobile", "garage"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
       "id": 29,
@@ -334,18 +334,26 @@
       "keywords": ["mécanique", "aviation", "avion", "pilote", "piloter"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
       "id": 30,
-      "Label": "Une formation dans la santé, le paramédical t'en penses quoi ?",
+      "Label": "Est-ce que tu aimes prendre soin d'autrui ?",
       "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
       "id": 31,
+      "Label": "Est-ce que tu es alruiste ?",
+      "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
+      "nsf": [],
+      "strength": "1",
+      "category": ["interests"]
+    },
+    {
+      "id": 32,
       "Label": "Une formation dans les soins, l'esthétique, la coiffure t'en penses quoi ?",
       "keywords": [
         "soins",
@@ -357,10 +365,10 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
-      "id": 32,
+      "id": 33,
       "Label": "Est-ce que tu aimes la gastronomie, la cuisine ?",
       "keywords": [
         "Alimentation",
@@ -374,45 +382,31 @@
       ],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
-      "id": 29,
-      "Label": "Le secteur  de la banque, la finance, l'assurance t'en dis quoi ?",
-      "keywords": ["banque", "finance", "Assurance", "economie"],
-      "nsf": [],
-      "strength": "1",
-      "category": []
-    },
-    {
-      "id": 30,
+      "id": 34,
       "Label": "Le secteur  du btp, de l'urbanisme t'en dis quoi ?",
       "keywords": ["btp", "Urbanisme", "Urbain", "travaux"],
       "nsf": [],
       "strength": "1",
-      "category": []
-    },
-    {
-      "id": 31,
-      "Label": "Le secteur  de l'énergie t'en dis quoi ?",
-      "keywords": ["energie", "environnement"],
-      "nsf": [],
-      "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
       "id": 32,
-      "Label": "Le secteur  de l'environnement, les déchets, la propreté t'en dis quoi ?",
+      "Label": "Est-ce que tu veux être un acteur de la transition écologique ?",
       "keywords": [
         "environnement",
         "nature",
         "déchets",
         "propreté",
-        "nettoyage"
+        "nettoyage",
+        "makyma",
+        "makymate"
       ],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["interests"]
     },
     {
       "id": 33,
