@@ -1,6 +1,7 @@
 import xmltodict
 import json
 import os
+from re import search
 
 file_name = 'data'
 dir = os.path.dirname(os.path.realpath(__file__))
@@ -26,6 +27,8 @@ def optional_chain(root, *keys):
             break
     return result
 
+counter = 0
+
 for fiche in json_output['FICHES']['FICHE']:
     # if optional_chain(fiche, 'BLOCS_COMPETENCES') is not None:
     if optional_chain(fiche, 'CODES_NSF') is not None:
@@ -33,8 +36,10 @@ for fiche in json_output['FICHES']['FICHE']:
             'ID_FICHE': optional_chain(fiche, 'ID_FICHE'), 
             'NUMERO_FICHE': optional_chain(fiche, 'NUMERO_FICHE'), 
             'INTITULE': optional_chain(fiche, 'INTITULE'), 
+            'NOMENCLATURE_EUROPE': optional_chain(fiche, 'NOMENCLATURE_EUROPE'), 
             'ABREGE': optional_chain(fiche, 'ABREGE'), 
             'CODES_NSF': optional_chain(fiche, 'CODES_NSF'), 
+            'CERTIFICATEURS': optional_chain(fiche, 'CERTIFICATEURS'), 
             'ACTIVITES_VISEES': optional_chain(fiche, 'ACTIVITES_VISEES'), 
             'CAPACITES_ATTESTEES': optional_chain(fiche, 'CAPACITES_ATTESTEES'), 
             'SECTEURS_ACTIVITE': optional_chain(fiche, 'SECTEURS_ACTIVITE'), 
