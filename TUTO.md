@@ -1,9 +1,11 @@
 
-##  Comment  contribuer au projet  Étudi’Quoi.
+#  Comment  contribuer au projet  Étudi’Quoi.
 
 Vous voulez permettre à  Étudi’Quoi, de se développer et de devenir plus précis dans ses résultats ? Contribuez au projet en remplissant et en complétant la base de données de questions.
 
 En fonction de vos  études / métier, renseignez les compétences et les appétences requises pour le bon déroulement de celui-ci. Vous pouvez remplir les mots clefs d’une question existante ou en créer une nouvelle.
+
+### Comprendre le fichier à modifier
 
 Commencez par naviguer dans le dossier  Data\Config.json,  ouvrez-le. Vous verrez toutes les questions actuellement utilisées par l’algorithme, commencez par regarder comment le fichier est hiérarchisé avant de le modifier. Vous trouverez :
 
@@ -32,6 +34,8 @@ Commencez par naviguer dans le dossier  Data\Config.json,  ouvrez-le. Vous verre
    character  : question qui porte sur le caractère d’une personne   
    skills  : question qui porte sur les compétences d’une personne   
    interest  : question qui porte sur les intérêts d’une personne
+
+### Effectuer et envoyer vos changements
 
 Maintenant que  vous savez comment le fichier fonctionne, vous pouvez commencer à y contribuer. Cliquez sur le bouton “Edit  this  file”  (le petit stylo en haut à droite du texte)  et commencez à  ajouter / modifier  des questions. Une fois que vous avez fini,  descendez  en bas de la page, vous trouverez un panneau “Commit  your  changes”. Donnez un nom à vos changements, et cliquez sur “Propose changes”.
 
