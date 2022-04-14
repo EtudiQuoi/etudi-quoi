@@ -48,9 +48,13 @@ export const globalStyles = (
 export const Container = styled.div`
   overflow: hidden;
   margin: auto;
-  height: 100vh;
-  position: relative;
-  width: 100vw;
+  // height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  // width: 100vw;
   padding: 1rem 0;
   max-width: 480px;
   background: ${({ theme }) => theme.backgroundGradient};

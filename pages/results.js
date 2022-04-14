@@ -34,7 +34,7 @@ const Results = () => {
             </HeaderP>
           </HeaderContainer>
         </GridItem>
-        <GridItem area="results">
+        <GridItem className="result" area="results">
           {formationsList?.length > 0 && (
             <CardsList>
               {formationsList.map((formation, index) => {
@@ -44,14 +44,12 @@ const Results = () => {
                   <>
                     <CardResult
                       key={formation.formation_id}
+                      id={formation.formation_id}
                       type={formation.type}
                       title={formation.label}
                       rncp={formation.rncp}
                       percentage={0}
                     />
-                    {index < formationsList.length - 1 && (
-                      <Separator key={index} />
-                    )}
                   </>
                 );
               })}
@@ -84,6 +82,13 @@ const GridItem = styled.div`
   grid-area: ${(props) => props.area};
   display: grid;
   place-items: center;
+
+  &.result {
+    overflow-x: hidden;
+    overflow: scroll;
+    min-height: 100%;
+    max-height: 100%;
+  }
 `;
 
 const HeaderContainer = styled.div`
@@ -106,13 +111,6 @@ const HeaderH1 = styled.h1`
 
 const CardsList = styled.ul`
   padding: 1rem 1.875rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.563rem;
-  overflow: scroll;
-  height: 100px;
-  min-height: 100%;
-  max-height: 100%;
 `;
 
 const Separator = styled.hr`

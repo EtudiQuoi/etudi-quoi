@@ -49,4 +49,8 @@ const Frame = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
+
+    & > *:nth-last-of-type(n+4) {
+        visibility: hidden;
+    }
 `;
