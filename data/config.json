@@ -271,7 +271,7 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["character"]
     },
     {
       "id": 23,
@@ -279,7 +279,7 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["skills"]
     },
     {
       "id": 24,
@@ -287,7 +287,7 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["character"]
     },
     {
       "id": 25,
@@ -295,18 +295,10 @@
       "keywords": ["droit", "justice", "Avocat", "juge", "code"],
       "nsf": [],
       "strength": "1",
-      "category": []
+      "category": ["skills"]
     },
     {
       "id": 26,
-      "Label": "Une formation dans l'enseignement, la formation, l'insertion t'en penses quoi ?",
-      "keywords": ["enseignement", "insertion", "orientation"],
-      "nsf": [],
-      "strength": "1",
-      "category": []
-    },
-    {
-      "id": 27,
       "Label": "Une formation dans l'hôtellerie, la restauration, le tourisme t'en penses quoi ?",
       "keywords": [
         "hôtellerie",
@@ -318,11 +310,19 @@
       ],
       "nsf": [],
       "strength": "1",
+      "category": ["interests"]
+    },
+    {
+      "id": 27,
+      "Label": "Est-ce que tu aimes l'automobile ?",
+      "keywords": ["mécanique", "Automobile", "garage"],
+      "nsf": [],
+      "strength": "1",
       "category": []
     },
     {
       "id": 28,
-      "Label": "Une formation dans la mécanique, l'automobile t'en penses quoi ?",
+      "Label": "Est-ce que tu aimes la mécanique ?",
       "keywords": ["mécanique", "Automobile", "garage"],
       "nsf": [],
       "strength": "1",
@@ -330,6 +330,14 @@
     },
     {
       "id": 29,
+      "Label": "Est-ce que tu aimes l'aviation ?",
+      "keywords": ["mécanique", "aviation", "avion", "pilote", "piloter"],
+      "nsf": [],
+      "strength": "1",
+      "category": []
+    },
+    {
+      "id": 30,
       "Label": "Une formation dans la santé, le paramédical t'en penses quoi ?",
       "keywords": ["santé", "médical", "paramédical", "soins", "soin"],
       "nsf": [],
@@ -337,7 +345,7 @@
       "category": []
     },
     {
-      "id": 30,
+      "id": 31,
       "Label": "Une formation dans les soins, l'esthétique, la coiffure t'en penses quoi ?",
       "keywords": [
         "soins",
@@ -352,13 +360,17 @@
       "category": []
     },
     {
-      "id": 28,
-      "Label": "Le secteur  de l'alimentation, l'agroalimentaire t'en dis quoi ?",
+      "id": 32,
+      "Label": "Est-ce que tu aimes la gastronomie, la cuisine ?",
       "keywords": [
         "Alimentation",
         "Alimentaire",
         "Agroalimentaire",
-        "nourriture"
+        "nourriture",
+        "gastronomie",
+        "cuisine",
+        "cuisiner",
+        "cuisinier"
       ],
       "nsf": [],
       "strength": "1",
