@@ -44,6 +44,7 @@ const Results = () => {
                   <>
                     <CardResult
                       key={formation.formation_id}
+                      id={formation.formation_id}
                       type={formation.type}
                       title={formation.label}
                       rncp={formation.rncp}

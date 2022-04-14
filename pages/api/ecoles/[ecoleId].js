@@ -2,8 +2,18 @@ import data from "../../../data/data.json";
 
 export default function handler(req, res) {
   const { ecoleId } = req.query;
-  const response = data.FICHES.filter(
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  );
+  const formation = data.FICHES.filter(
     (formation) => formation.ID_FICHE === ecoleId
   );
-  res.status(200).json(response);
+  const certificateurs = [];
+
+  Object.values(formation[0].CERTIFICATEURS.CERTIFICATEUR).forEach((row) => {
+    certificateurs.push(row.NOM_CERTIFICATEUR);
+  });
+  res.status(200).json(certificateurs);
 }
