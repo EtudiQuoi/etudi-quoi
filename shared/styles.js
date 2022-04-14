@@ -5,7 +5,7 @@ export const lightTheme = {
   primary: "#0C53A3",
   primaryHover: "#84B9EB",
   secondary: "#84B9EB",
-  accentColor: "#E94057",
+  accentColor: "#FC8E5E",
   accentColorHover: "#F6A0AC",
   darkColor: "#083262",
   darkShade: "#161C2E",

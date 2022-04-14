@@ -28,9 +28,9 @@ const A = styled.a`
   display: flex;
   align-items: center;
 
-  &:hover {
-    transform: scale(1.1);
-  }
+  // &:hover {
+  //   transform: scale(1.1);
+  // }
 
   &.outlink {
     background: transparent;

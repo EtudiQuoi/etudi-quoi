@@ -34,7 +34,7 @@ const TutorialContent = () => {
   const dragChangeSlide = () => {
     if (
       touchStart > touchEnd &&
-      slideNumber < 3 &&
+      slideNumber < 4 &&
       touchStart !== 0 &&
       touchEnd !== 0
     ) {
@@ -69,6 +69,8 @@ const TutorialContent = () => {
           {slideNumber === 1
             ? "Swipe les propositions qui te caractérisent"
             : slideNumber === 2
+            ? "Tu peux swiper :"
+            : slideNumber === 3
             ? "Découvre les formations qui te correspondent"
             : "Trouve les établissements qui proposent la formation"}
         </H2>
@@ -85,8 +87,9 @@ const TutorialContent = () => {
           <Bullet active={slideNumber === 1} onClick={() => onClickBullet(1)} />
           <Bullet active={slideNumber === 2} onClick={() => onClickBullet(2)} />
           <Bullet active={slideNumber === 3} onClick={() => onClickBullet(3)} />
+          <Bullet active={slideNumber === 4} onClick={() => onClickBullet(4)} />
         </Bullets>
-        {slideNumber < 3 ? (
+        {slideNumber < 4 ? (
           <Button onClick={onClickNextButton}>Suivant</Button>
         ) : (
           <LinkTo link="/questions" className="primary big">
