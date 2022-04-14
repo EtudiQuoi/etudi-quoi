@@ -3,9 +3,9 @@ import { css } from "@emotion/react";
 import Link from "next/link";
 import Image from "next/image";
 import partenaire1 from "../public/partenaire1.png";
-import partenaire2 from "../public/partenaire2.png";
+import mmi from "../public/mmi.png";
 import partenaire3 from "../public/partenaire3.png";
-import partenaire4 from "../public/partenaire4.png";
+import scalingo from "../public/scalingo.png";
 
 import RoundButton from "./RoundButton";
 import Button from "./Button";
@@ -69,7 +69,7 @@ export default function Setting({ setIsOpenSetting }) {
                                         <Image src={partenaire1} layout={"fixed"} alt="Picture of partenaire" />
                                     </ImgBoxChild>
                                     <ImgBoxChild>
-                                        <Image src={partenaire2} layout={"fixed"} alt="Picture of partenaire" />
+                                        <Image src={mmi} layout={"fixed"} alt="Picture of partenaire" />
                                     </ImgBoxChild>
                                 </ImgBox>
 
@@ -78,7 +78,7 @@ export default function Setting({ setIsOpenSetting }) {
                                         <Image src={partenaire3} layout={"fixed"} alt="Picture of partenaire" />
                                     </ImgBoxChild>
                                     <ImgBoxChild>
-                                        <Image src={partenaire4} layout={"fixed"} alt="Picture of partenaire" />
+                                        <Image src={scalingo} layout={"fixed"} alt="Picture of partenaire" />
                                     </ImgBoxChild>
                                 </ImgBox>
                             </Content>
