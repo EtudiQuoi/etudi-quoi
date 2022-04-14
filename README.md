@@ -4,6 +4,11 @@
 
 Test the app here : https://etudiquoi.com/
 
+## Contribuer au projet
+
+[Tutoriel](TUTO.md)
+
+
 ## Copyrights ©
 
 Maxence BREUILLES ([@MisterAzix](https://github.com/MisterAzix))<br />
