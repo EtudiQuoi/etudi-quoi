@@ -18,7 +18,7 @@ export default function RoundButton(props) {
         >
           <path
             d="M24.2175 3L3 24.2175M24.2175 24.2175L3 3"
-            stroke="#0C53A3"
+            stroke="#FC8E5E"
             strokeWidth="7"
           />
         </svg>
@@ -92,13 +92,10 @@ const Btn = styled.button`
       return css`
         width: 4rem;
         height: 4rem;
+        min-width: 4rem;
       `;
     }
   }}
-
-  &:hover {
-    transform: scale(1.1);
-  }
 
   ${(props) =>
     props.layout === "check" &&

@@ -5,6 +5,7 @@ import { css } from "@emotion/react";
 import CardIcon from "../icons/CardIcon";
 import MapIcon from "../icons/MapIcon";
 import CardResult from "../components/CardResult";
+import RoundButton from "../components/RoundButton";
 import SchoolCard from "../components/SchoolCard";
 
 const ContainerAnimation = (props) => {
@@ -45,6 +46,23 @@ const Slide1 = ({ direction }) => {
 
 const Slide2 = ({ direction }) => {
   return (
+    <ContainerAnimation css={{ alignItems: "center" }} direction={direction}>
+      <TutoSwipeContainer>
+        <Row>
+          <RoundButton layout="cross" />
+          <P>À gauche si tu ne te reconnais pas dans la question.</P>
+        </Row>
+        <Row>
+          <RoundButton layout="check" />
+          <P>À droite si la question te correspond.</P>
+        </Row>
+      </TutoSwipeContainer>
+    </ContainerAnimation>
+  );
+};
+
+const Slide3 = ({ direction }) => {
+  return (
     <ContainerAnimation direction={direction}>
       <CardsList>
         <CardResult
@@ -62,7 +80,7 @@ const Slide2 = ({ direction }) => {
   );
 };
 
-const Slide3 = ({ direction }) => {
+const Slide4 = ({ direction }) => {
   return (
     <ContainerAnimation direction={direction}>
       <MapIcon
@@ -80,6 +98,7 @@ const TutoSlide = ({ slideNumber, direction }) => {
       {slideNumber === 1 && <Slide1 direction={direction} />}
       {slideNumber === 2 && <Slide2 direction={direction} />}
       {slideNumber === 3 && <Slide3 direction={direction} />}
+      {slideNumber === 4 && <Slide4 direction={direction} />}
     </>
   );
 };
@@ -106,6 +125,23 @@ const Container = styled(motion.div)`
   max-width: 100vw;
   height: 100%;
   justify-content: space-around;
+`;
+
+const TutoSwipeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2.625rem;
+`;
+
+const Row = styled.div`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+`;
+
+const P = styled.p`
+  text-align: left;
+  font-size: 1.125rem;
 `;
 
 const SchoolsList = styled.ul`
