@@ -3,7 +3,8 @@ import styled from "@emotion/styled";
 import LinkTo from "../components/LinkTo";
 import ArrowLinkIcon from "../icons/ArrowLinkIcon";
 
-const CardResult = ({ type, title, percentage, rncp, className }) => {
+const CardResult = ({ id, type, title, percentage, rncp, className }) => {
+  console.log(id);
   const rncpNumber = rncp?.slice(4);
   if (className === "tutorial") {
     return (
@@ -42,7 +43,7 @@ const CardResult = ({ type, title, percentage, rncp, className }) => {
           En savoir plus
           <ArrowLinkIcon />
         </LinkTo>
-        <LinkTo link="/ecoles" className="secondary">
+        <LinkTo link={`/ecoles/${id}`} className="secondary">
           Établissements
         </LinkTo>
       </Buttons>
@@ -65,6 +66,9 @@ const ListItem = styled.li`
   display: flex;
   flex-direction: column;
   gap: 1.563rem;
+  margin-bottom: 1.563rem;
+  padding-bottom: 1.563rem;
+  border-bottom: 1px solid grey;
   color: ${({ theme }) => theme.darkColor};
 
   &.tutorial-grey {

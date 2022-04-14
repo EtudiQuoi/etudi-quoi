@@ -1,13 +1,54 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
-import { Container } from "../shared/styles";
+import useFetch from "../../lib/useFetch";
 
-import BackIcon from "../icons/BackIcon";
-import Navbar from "../components/Navbar";
-import SchoolCard from "../components/SchoolCard";
+import { Container } from "../../shared/styles";
+
+import BackIcon from "../../icons/BackIcon";
+import Navbar from "../../components/Navbar";
 
 const Schools = (props) => {
+  const router = useRouter();
+
+  // const path = router.query.Id;
+  // const { data, loading, error } = useFetch(
+  //   `https://localhost:3000/api${router.query.Id}`
+  // );
+
+  // const [data, setData] = useState(null);
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(null);
+  // const [url, setUrl] = useState("");
+
+  // useEffect(() => {
+  //   if (router.isReady) {
+  //     setUrl(`https://localhost:3000/api${router.query.Id}`);
+  //     setLoading(true);
+  //     fetch(url)
+  //       .then((res) => {
+  //         if (!res.ok) {
+  //           throw new Error(`${res}`);
+  //         }
+  //         console.log(res);
+  //         return res.json();
+  //       })
+  //       .then((data) => {
+  //         setData(data);
+  //         setError(null);
+  //       })
+  //       .catch((err) => {
+  //         setData(null);
+  //         setError(err);
+  //       })
+  //       .finally(() => {
+  //         setLoading(false);
+  //       });
+  //   }
+  // }, [url]);
+
   return (
     <Container>
       <Grid>
@@ -25,16 +66,15 @@ const Schools = (props) => {
           <SchoolTitle>Métiers du Multimédia et de l'Internet</SchoolTitle>
         </GridItem>
         <GridItem area="schools">
+          {/* {loading && <p>Loading...</p>}
+          {error && (
+            <p>{`Il y a eu un problème lors de la récupération des données`}</p>
+          )}
           <SchoolsList>
-            <SchoolCard>IUT Bordeaux</SchoolCard>
-            <SchoolCard>IUT Toulouse</SchoolCard>
-            <SchoolCard>IUT Laval</SchoolCard>
-            <SchoolCard>IUT Toulon</SchoolCard>
-            <SchoolCard>IUT Tours</SchoolCard>
-            <SchoolCard>IUT Marseille</SchoolCard>
-            <SchoolCard>IUT Tarbes</SchoolCard>
-            <SchoolCard>IUT Paris</SchoolCard>
-          </SchoolsList>
+            {data.map((formation) => (
+              <SchoolCard>{formation}</SchoolCard>
+            ))}
+          </SchoolsList> */}
         </GridItem>
         <GridItem area="navbar">
           <Navbar />
