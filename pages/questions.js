@@ -139,8 +139,8 @@ const Item = styled.div`
     grid-template-columns: 100%;
     grid-template-rows: 10% 1fr 10%;
     place-items: center;
-    width: calc(40vh * 0.8);
-    height: 40vh;
+    width: calc(35vh * 0.8);
+    height: 35vh;
     padding: 2rem;
     box-shadow: ${({ theme }) => theme.boxShadow};
     font-size: 1.3rem;
